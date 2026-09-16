@@ -1,0 +1,236 @@
+{
+  "chapter": {
+    "title": "Void Part I",
+    "season": 2,
+    "chapter_number": 3,
+    "arc": "Void Arc",
+    "type": "convergence_escalation"
+  },
+
+  "nodes": [
+    {"id":"pixel","type":"character"},
+    {"id":"zitsu","type":"character"},
+    {"id":"ayan","type":"character"},
+    {"id":"ninja_hatori","type":"character"},
+    {"id":"ishan","type":"character"},
+    {"id":"demon","type":"character"},
+
+    {"id":"mind_of_the_server","type":"shard"},
+    {"id":"peace_of_the_server","type":"shard"},
+    {"id":"wrath_of_the_server","type":"shard"},
+    {"id":"soul_of_the_server","type":"shard"},
+    {"id":"void_shard","type":"shard"},
+
+    {"id":"code_realm","type":"realm"},
+    {"id":"void_realm","type":"realm"},
+    {"id":"crimson_void","type":"location"},
+
+    {"id":"gray_portal","type":"portal"},
+    {"id":"blood_portal","type":"portal"},
+    {"id":"stasis_pearl_chamber","type":"mechanism"},
+
+    {"id":"soul_saviour","type":"weapon"},
+    {"id":"wrath_axe","type":"weapon"}
+  ],
+
+  "edges": [
+    {
+      "source":"pixel",
+      "target":"void_realm",
+      "relation":"enters"
+    },
+
+    {
+      "source":"pixel",
+      "target":"void_shard",
+      "relation":"searches_for"
+    },
+
+    {
+      "source":"mind_of_the_server",
+      "target":"pixel",
+      "relation":"assists_tracking"
+    },
+
+    {
+      "source":"system",
+      "target":"void_shard",
+      "relation":"cannot_locate"
+    },
+
+    {
+      "source":"system",
+      "target":"void_shard",
+      "relation":"reports_no_bearer"
+    },
+
+    {
+      "source":"ninja_hatori",
+      "target":"ayan",
+      "relation":"believes_dead"
+    },
+
+    {
+      "source":"ninja_hatori",
+      "target":"stasis_pearl_chamber",
+      "relation":"fails_to_activate"
+    },
+
+    {
+      "source":"ishan",
+      "target":"demon",
+      "relation":"battles"
+    },
+
+    {
+      "source":"demon",
+      "target":"ishan",
+      "relation":"attempts_to_kill"
+    },
+
+    {
+      "source":"wrath_of_the_server",
+      "target":"demon",
+      "relation":"empowers"
+    },
+
+    {
+      "source":"peace_of_the_server",
+      "target":"ishan",
+      "relation":"empowers"
+    },
+
+    {
+      "source":"zitsu",
+      "target":"ayan",
+      "relation":"recently_reunited_with"
+    },
+
+    {
+      "source":"pixel",
+      "target":"ayan",
+      "relation":"targets"
+    },
+
+    {
+      "source":"pixel",
+      "target":"zitsu",
+      "relation":"targets"
+    }
+  ],
+
+  "events": [
+    {
+      "id":"s2_event_019",
+      "name":"Pixel Enters the Void Realm",
+      "participants":[
+        "pixel"
+      ]
+    },
+
+    {
+      "id":"s2_event_020",
+      "name":"Void Shard Search Failure",
+      "participants":[
+        "pixel",
+        "void_shard"
+      ]
+    },
+
+    {
+      "id":"s2_event_021",
+      "name":"Ninja Declares Ayan Dead",
+      "participants":[
+        "ninja_hatori"
+      ]
+    },
+
+    {
+      "id":"s2_event_022",
+      "name":"Battle of Peace and Wrath Continues",
+      "participants":[
+        "ishan",
+        "demon"
+      ]
+    },
+
+    {
+      "id":"s2_event_023",
+      "name":"Demon Lands First Major Strike",
+      "participants":[
+        "demon",
+        "ishan"
+      ]
+    }
+  ],
+
+  "character_state_changes": [
+    {
+      "character":"pixel",
+      "before":"observer",
+      "after":"active_hunter"
+    },
+
+    {
+      "character":"ninja_hatori",
+      "before":"hopeful",
+      "after":"grieving"
+    },
+
+    {
+      "character":"ishan",
+      "before":"confident",
+      "after":"serious"
+    },
+
+    {
+      "character":"demon",
+      "before":"unstable_bearer",
+      "after":"fully_committed_combatant"
+    }
+  ],
+
+  "major_revelations": [
+    {
+      "id":"reveal_043",
+      "fact":"Even Pixel cannot locate the Void Shard."
+    },
+
+    {
+      "id":"reveal_044",
+      "fact":"The system reports no current bearer for the Void Shard."
+    },
+
+    {
+      "id":"reveal_045",
+      "fact":"Pixel considers Ayan and Zitsu priority threats."
+    },
+
+    {
+      "id":"reveal_046",
+      "fact":"The Void Realm interferes with standard system tracking."
+    }
+  ],
+
+  "season_arc_updates": [
+    {
+      "arc":"Void Shard Hunt",
+      "status":"active"
+    },
+
+    {
+      "arc":"Pixel Intervention",
+      "status":"escalated"
+    },
+
+    {
+      "arc":"Peace vs Wrath",
+      "status":"ongoing"
+    },
+
+    {
+      "arc":"Void Convergence",
+      "status":"accelerating"
+    }
+  ]
+}

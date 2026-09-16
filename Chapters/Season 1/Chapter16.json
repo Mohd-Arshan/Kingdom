@@ -1,0 +1,310 @@
+{
+  "chapter": {
+    "title": "The Hidden Trigger",
+    "arc": "Final Arc Prelude",
+    "season": 1,
+    "type": "turning_point_arc"
+  },
+
+  "nodes": [
+    { "id": "ayan", "type": "character" },
+    { "id": "demonic", "type": "character" },
+    { "id": "zenestrio", "type": "character" },
+    { "id": "prosam", "type": "character" },
+
+    { "id": "aj", "type": "character" },
+    { "id": "shubham", "type": "character" },
+    { "id": "pixel", "type": "character" },
+
+    { "id": "beacon_structure", "type": "artifact" },
+    { "id": "multi_shard_beam", "type": "energy_event" },
+
+    { "id": "hidden_library", "type": "location" },
+    { "id": "static_pearl_chamber", "type": "location" },
+    { "id": "override_switch", "type": "artifact" },
+
+    { "id": "worn_book", "type": "artifact" },
+    { "id": "ancient_bookshelf_lock", "type": "mechanism" },
+
+    { "id": "code_realm", "type": "realm" },
+    { "id": "pixel_network", "type": "system" },
+
+    { "id": "mind_of_the_server", "type": "shard" },
+
+    { "id": "shard_pulses", "type": "energy_source" },
+    { "id": "hidden_trigger", "type": "mechanism" }
+  ],
+
+  "edges": [
+    {
+      "source": "ayan",
+      "target": "beacon_structure",
+      "relation": "analyzes_failure_of"
+    },
+
+    {
+      "source": "ayan",
+      "target": "shard_pulses",
+      "relation": "understands_dependency_on"
+    },
+
+    {
+      "source": "demonic",
+      "target": "beacon_structure",
+      "relation": "synchronizes_with"
+    },
+
+    {
+      "source": "demonic",
+      "target": "pixel_network",
+      "relation": "acts_as_bridge_to"
+    },
+
+    {
+      "source": "beacon_structure",
+      "target": "multi_shard_beam",
+      "relation": "generates"
+    },
+
+    {
+      "source": "multi_shard_beam",
+      "target": "shard_pulses",
+      "relation": "amplifies"
+    },
+
+    {
+      "source": "hidden_trigger",
+      "target": "multi_shard_beam",
+      "relation": "activated_by"
+    },
+
+    {
+      "source": "shubham",
+      "target": "hidden_library",
+      "relation": "discovers"
+    },
+
+    {
+      "source": "worn_book",
+      "target": "ancient_bookshelf_lock",
+      "relation": "unlocks"
+    },
+
+    {
+      "source": "shubham",
+      "target": "override_switch",
+      "relation": "activates"
+    },
+
+    {
+      "source": "override_switch",
+      "target": "static_pearl_chamber",
+      "relation": "opens"
+    },
+
+    {
+      "source": "static_pearl_chamber",
+      "target": "aj",
+      "relation": "contains"
+    },
+
+    {
+      "source": "pixel",
+      "target": "aj",
+      "relation": "imprisons"
+    },
+
+    {
+      "source": "aj",
+      "target": "code_realm",
+      "relation": "escapes_from"
+    },
+
+    {
+      "source": "shubham",
+      "target": "aj",
+      "relation": "rescues"
+    },
+
+    {
+      "source": "aj",
+      "target": "mind_of_the_server",
+      "relation": "implied_bearer_of"
+    },
+
+    {
+      "source": "pixel",
+      "target": "mind_of_the_server",
+      "relation": "failed_to_remove_from_game"
+    },
+
+    {
+      "source": "aj",
+      "target": "final_arc",
+      "relation": "initiates"
+    }
+  ],
+
+  "events": [
+    {
+      "id": "event_117",
+      "name": "Ayan Discovers the Beacon's Real Purpose",
+      "participants": [
+        "ayan",
+        "beacon_structure"
+      ]
+    },
+
+    {
+      "id": "event_118",
+      "name": "Demonic Synchronizes with the Beacon",
+      "participants": [
+        "demonic",
+        "beacon_structure"
+      ]
+    },
+
+    {
+      "id": "event_119",
+      "name": "Multi-Shard Beam Activation",
+      "participants": [
+        "demonic",
+        "multi_shard_beam"
+      ]
+    },
+
+    {
+      "id": "event_120",
+      "name": "Discovery of the Hidden Library",
+      "participants": [
+        "shubham"
+      ]
+    },
+
+    {
+      "id": "event_121",
+      "name": "Activation of the Override Switch",
+      "participants": [
+        "shubham",
+        "override_switch"
+      ]
+    },
+
+    {
+      "id": "event_122",
+      "name": "AJ Escapes the Code Realm",
+      "participants": [
+        "aj",
+        "pixel"
+      ]
+    },
+
+    {
+      "id": "event_123",
+      "name": "Reunion of AJ and Shubham",
+      "participants": [
+        "aj",
+        "shubham"
+      ]
+    },
+
+    {
+      "id": "event_124",
+      "name": "Beginning of the Final Arc",
+      "participants": [
+        "aj"
+      ]
+    }
+  ],
+
+  "character_state_changes": [
+    {
+      "character": "ayan",
+      "before": "frustrated_and_defeated",
+      "after": "understands_the_system"
+    },
+
+    {
+      "character": "demonic",
+      "before": "passive_connection",
+      "after": "active_catalyst"
+    },
+
+    {
+      "character": "shubham",
+      "before": "unknown_explorer",
+      "after": "key_rescuer"
+    },
+
+    {
+      "character": "aj",
+      "before": "captured_mastermind",
+      "after": "returned_commander"
+    },
+
+    {
+      "character": "pixel",
+      "before": "complete_control",
+      "after": "first_major_loss"
+    }
+  ],
+
+  "major_revelations": [
+    {
+      "id": "reveal_028",
+      "fact": "The beacon amplifies shard signals but requires shard identification to function."
+    },
+
+    {
+      "id": "reveal_029",
+      "fact": "Demonic's glitch connection can interface with shard energy."
+    },
+
+    {
+      "id": "reveal_030",
+      "fact": "AJ was hidden inside a Static Pearl Chamber rather than destroyed."
+    },
+
+    {
+      "id": "reveal_031",
+      "fact": "Shubham has been following a hidden recovery protocol."
+    },
+
+    {
+      "id": "reveal_032",
+      "fact": "AJ's return coincides exactly with the beacon's successful activation."
+    },
+
+    {
+      "id": "reveal_033",
+      "fact": "AJ is heavily implied to be the bearer of Mind of the Server."
+    }
+  ],
+
+  "season_arc_updates": [
+    {
+      "arc": "Beacon Project",
+      "status": "successful"
+    },
+
+    {
+      "arc": "AJ Rescue",
+      "status": "completed"
+    },
+
+    {
+      "arc": "Mind of the Server",
+      "status": "bearer_revealed"
+    },
+
+    {
+      "arc": "Pixel's Control",
+      "status": "broken"
+    },
+
+    {
+      "arc": "Final Arc",
+      "status": "started"
+    }
+  ]
+}

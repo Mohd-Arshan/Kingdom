@@ -1,0 +1,281 @@
+{
+  "chapter": {
+    "title": "Skylands Mein Hungama!",
+    "arc": "Ishan Arc",
+    "season": 1,
+    "type": "character_arc"
+  },
+
+  "nodes": [
+    { "id": "ishan", "type": "character" },
+    { "id": "aj", "type": "character" },
+    { "id": "zitsu", "type": "character" },
+    { "id": "mightsta", "type": "character" },
+    { "id": "pixel", "type": "character" },
+
+    { "id": "skylands", "type": "realm" },
+    { "id": "floating_village", "type": "location" },
+    { "id": "cloud_temple", "type": "location" },
+    { "id": "dream_dimension", "type": "dimension" },
+
+    { "id": "sky_vulture", "type": "creature" },
+    { "id": "corrupted_cloud_mobs", "type": "enemy_group" },
+    { "id": "sky_villagers", "type": "faction" },
+
+    { "id": "peace_of_the_server", "type": "shard" },
+    { "id": "sky_wings", "type": "artifact" },
+    { "id": "sky_feathers", "type": "material" },
+
+    { "id": "shard_voice", "type": "entity" }
+  ],
+
+  "edges": [
+    {
+      "source": "ishan",
+      "target": "skylands",
+      "relation": "stranded_in"
+    },
+
+    {
+      "source": "ishan",
+      "target": "sky_vulture",
+      "relation": "defeats"
+    },
+
+    {
+      "source": "ishan",
+      "target": "aj",
+      "relation": "misses"
+    },
+
+    {
+      "source": "ishan",
+      "target": "zitsu",
+      "relation": "misses"
+    },
+
+    {
+      "source": "ishan",
+      "target": "mightsta",
+      "relation": "misses"
+    },
+
+    {
+      "source": "ishan",
+      "target": "floating_village",
+      "relation": "protects"
+    },
+
+    {
+      "source": "ishan",
+      "target": "corrupted_cloud_mobs",
+      "relation": "drives_away"
+    },
+
+    {
+      "source": "sky_villagers",
+      "target": "ishan",
+      "relation": "trusts"
+    },
+
+    {
+      "source": "sky_villagers",
+      "target": "cloud_temple",
+      "relation": "guides_to"
+    },
+
+    {
+      "source": "ishan",
+      "target": "peace_of_the_server",
+      "relation": "obtains"
+    },
+
+    {
+      "source": "peace_of_the_server",
+      "target": "dream_dimension",
+      "relation": "transports_to"
+    },
+
+    {
+      "source": "peace_of_the_server",
+      "target": "zitsu",
+      "relation": "reveals_vision_of"
+    },
+
+    {
+      "source": "peace_of_the_server",
+      "target": "mightsta",
+      "relation": "reveals_vision_of"
+    },
+
+    {
+      "source": "peace_of_the_server",
+      "target": "pixel",
+      "relation": "reveals_vision_of"
+    },
+
+    {
+      "source": "shard_voice",
+      "target": "ishan",
+      "relation": "chooses_as_bearer"
+    },
+
+    {
+      "source": "peace_of_the_server",
+      "target": "ishan",
+      "relation": "bonds_with"
+    },
+
+    {
+      "source": "sky_villagers",
+      "target": "ishan",
+      "relation": "grants_title_hawaon_ka_rakshak"
+    },
+
+    {
+      "source": "sky_villagers",
+      "target": "sky_wings",
+      "relation": "crafts"
+    },
+
+    {
+      "source": "sky_wings",
+      "target": "ishan",
+      "relation": "gifted_to"
+    },
+
+    {
+      "source": "ishan",
+      "target": "mightsta",
+      "relation": "seeks_first"
+    }
+  ],
+
+  "events": [
+    {
+      "id": "event_033",
+      "name": "Arrival in Skylands",
+      "participants": [
+        "ishan"
+      ]
+    },
+
+    {
+      "id": "event_034",
+      "name": "Battle with the Sky Vulture",
+      "participants": [
+        "ishan",
+        "sky_vulture"
+      ]
+    },
+
+    {
+      "id": "event_035",
+      "name": "Loneliness Under the Stars",
+      "participants": [
+        "ishan"
+      ]
+    },
+
+    {
+      "id": "event_036",
+      "name": "Defense of the Floating Village",
+      "participants": [
+        "ishan",
+        "floating_village",
+        "corrupted_cloud_mobs"
+      ]
+    },
+
+    {
+      "id": "event_037",
+      "name": "Discovery of the Cloud Temple",
+      "participants": [
+        "ishan",
+        "sky_villagers"
+      ]
+    },
+
+    {
+      "id": "event_038",
+      "name": "Acquisition of Peace of the Server",
+      "participants": [
+        "ishan",
+        "peace_of_the_server"
+      ]
+    },
+
+    {
+      "id": "event_039",
+      "name": "Vision of the Fractured Realms",
+      "participants": [
+        "ishan",
+        "zitsu",
+        "mightsta",
+        "pixel"
+      ]
+    },
+
+    {
+      "id": "event_040",
+      "name": "Becoming the Guardian of the Skies",
+      "participants": [
+        "ishan",
+        "sky_villagers"
+      ]
+    }
+  ],
+
+  "character_state_changes": [
+    {
+      "character": "ishan",
+      "before": "comic_relief",
+      "after": "hope_bearer"
+    },
+
+    {
+      "character": "ishan",
+      "before": "carefree_wanderer",
+      "after": "guardian"
+    },
+
+    {
+      "character": "ishan",
+      "before": "isolated",
+      "after": "purpose_driven"
+    }
+  ],
+
+  "shards": [
+    {
+      "id": "peace_of_the_server",
+      "type": "core_fragment",
+      "bearer": "ishan",
+      "element": "harmony",
+      "purpose": "restore_balance",
+      "status": "awakened"
+    }
+  ],
+
+  "titles": [
+    {
+      "holder": "ishan",
+      "title": "Hawaon ka Rakshak"
+    }
+  ],
+
+  "season_arc_updates": [
+    {
+      "arc": "Peace of the Server",
+      "status": "awakened"
+    },
+    {
+      "arc": "Realm Reunification",
+      "status": "initiated"
+    },
+    {
+      "arc": "Ishan's Growth",
+      "status": "completed"
+    }
+  ]
+}

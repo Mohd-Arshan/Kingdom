@@ -1,0 +1,247 @@
+{
+  "chapter": {
+    "title": "Summoned by the Void",
+    "season": 2,
+    "chapter_number": 2,
+    "arc": "Void Arc",
+    "type": "convergence"
+  },
+
+  "nodes": [
+    {"id":"aj","type":"character"},
+    {"id":"shubham","type":"character"},
+    {"id":"ayan","type":"character"},
+    {"id":"zitsu","type":"character"},
+    {"id":"pixel","type":"character"},
+    {"id":"ninja_hatori","type":"character"},
+    {"id":"golden_piglin","type":"character"},
+
+    {"id":"void_realm","type":"realm"},
+    {"id":"missing_chunk","type":"phenomenon"},
+    {"id":"ruined_nether_portal","type":"location"},
+
+    {"id":"beacon_structure","type":"artifact"},
+    {"id":"soul_of_the_server","type":"shard"},
+    {"id":"soul_saviour","type":"weapon"},
+
+    {"id":"stasis_pearl_chamber","type":"mechanism"},
+    {"id":"violet_portal","type":"portal"}
+  ],
+
+  "edges": [
+    {
+      "source":"aj",
+      "target":"missing_chunk",
+      "relation":"investigates"
+    },
+
+    {
+      "source":"missing_chunk",
+      "target":"beacon_structure",
+      "relation":"created_by_activation_of"
+    },
+
+    {
+      "source":"golden_piglin",
+      "target":"missing_chunk",
+      "relation":"witnessed_creation_of"
+    },
+
+    {
+      "source":"aj",
+      "target":"beacon_structure",
+      "relation":"deduces_function_of"
+    },
+
+    {
+      "source":"beacon_structure",
+      "target":"shards",
+      "relation":"attempted_to_attract"
+    },
+
+    {
+      "source":"ayan",
+      "target":"unknown_entity",
+      "relation":"investigates"
+    },
+
+    {
+      "source":"ayan",
+      "target":"stasis_pearl_chamber",
+      "relation":"constructs"
+    },
+
+    {
+      "source":"ninja_hatori",
+      "target":"stasis_pearl_chamber",
+      "relation":"constructs"
+    },
+
+    {
+      "source":"violet_portal",
+      "target":"zitsu",
+      "relation":"summons"
+    },
+
+    {
+      "source":"dark_zitsu",
+      "target":"void_realm",
+      "relation":"recognizes"
+    },
+
+    {
+      "source":"soul_of_the_server",
+      "target":"soul_saviour",
+      "relation":"empowers"
+    },
+
+    {
+      "source":"ayan",
+      "target":"zitsu",
+      "relation":"reunites_with"
+    },
+
+    {
+      "source":"zitsu",
+      "target":"ayan",
+      "relation":"rescues"
+    },
+
+    {
+      "source":"pixel",
+      "target":"ayan",
+      "relation":"observes"
+    },
+
+    {
+      "source":"pixel",
+      "target":"zitsu",
+      "relation":"observes"
+    },
+
+    {
+      "source":"pixel",
+      "target":"void_realm",
+      "relation":"manifests_avatar_in"
+    }
+  ],
+
+  "events":[
+    {
+      "id":"s2_event_012",
+      "name":"Discovery of the Missing Chunk",
+      "participants":["aj","shubham"]
+    },
+
+    {
+      "id":"s2_event_013",
+      "name":"Appearance of the Golden Piglin",
+      "participants":["aj","golden_piglin"]
+    },
+
+    {
+      "id":"s2_event_014",
+      "name":"Frozen Realm Expedition",
+      "participants":["ayan","ninja_hatori"]
+    },
+
+    {
+      "id":"s2_event_015",
+      "name":"Construction of Stasis Chamber",
+      "participants":["ayan","ninja_hatori"]
+    },
+
+    {
+      "id":"s2_event_016",
+      "name":"Zitsu Arrives in Void Realm",
+      "participants":["zitsu"]
+    },
+
+    {
+      "id":"s2_event_017",
+      "name":"Ayan and Zitsu Reunion",
+      "participants":["ayan","zitsu"]
+    },
+
+    {
+      "id":"s2_event_018",
+      "name":"Pixel's Appearance",
+      "participants":["pixel","ayan","zitsu"]
+    }
+  ],
+
+  "character_state_changes":[
+    {
+      "character":"ayan",
+      "before":"isolated_leader",
+      "after":"hope_restored"
+    },
+
+    {
+      "character":"zitsu",
+      "before":"lost_wanderer",
+      "after":"reconnected_to_team"
+    },
+
+    {
+      "character":"aj",
+      "before":"uncertain",
+      "after":"forming_new_theory"
+    },
+
+    {
+      "character":"pixel",
+      "before":"observer",
+      "after":"active_participant"
+    }
+  ],
+
+  "major_revelations":[
+    {
+      "id":"reveal_038",
+      "fact":"The beacon erased an entire chunk from reality."
+    },
+
+    {
+      "id":"reveal_039",
+      "fact":"The beacon's intended purpose was to attract shard bearers."
+    },
+
+    {
+      "id":"reveal_040",
+      "fact":"A mysterious intelligent Piglin witnessed the event."
+    },
+
+    {
+      "id":"reveal_041",
+      "fact":"The Void Realm contains multiple separated regions."
+    },
+
+    {
+      "id":"reveal_042",
+      "fact":"Pixel can project himself into the Void Realm."
+    }
+  ],
+
+  "season_arc_updates":[
+    {
+      "arc":"Void Realm Mystery",
+      "status":"expanding"
+    },
+
+    {
+      "arc":"Shard Convergence",
+      "status":"started"
+    },
+
+    {
+      "arc":"Ayan-Zitsu Reunion",
+      "status":"completed"
+    },
+
+    {
+      "arc":"Pixel's Intervention",
+      "status":"started"
+    }
+  ]
+}

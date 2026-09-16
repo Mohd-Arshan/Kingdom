@@ -1,0 +1,237 @@
+{
+  "chapter": {
+    "title": "When Wrath Turns Back",
+    "arc": "Demon Arc",
+    "season": 1,
+    "type": "shard_trial_arc"
+  },
+
+  "nodes": [
+    { "id": "demon", "type": "character" },
+    { "id": "ishan", "type": "character" },
+
+    { "id": "wrath_of_the_server", "type": "shard" },
+    { "id": "peace_of_the_server", "type": "shard" },
+
+    { "id": "wrath_avatar", "type": "manifestation" },
+    { "id": "shard_whispers", "type": "entity" },
+
+    { "id": "wrath_domain", "type": "realm" },
+    { "id": "corrupted_basin", "type": "location" },
+
+    { "id": "wrath_axe", "type": "weapon" },
+
+    { "id": "consumption_trial", "type": "shard_trial" },
+    { "id": "control", "type": "concept" },
+    { "id": "rage", "type": "concept" },
+    { "id": "worthiness", "type": "concept" }
+  ],
+
+  "edges": [
+    {
+      "source": "wrath_of_the_server",
+      "target": "demon",
+      "relation": "tests_again"
+    },
+
+    {
+      "source": "wrath_of_the_server",
+      "target": "consumption_trial",
+      "relation": "initiates"
+    },
+
+    {
+      "source": "shard_whispers",
+      "target": "demon",
+      "relation": "attempts_to_break"
+    },
+
+    {
+      "source": "wrath_of_the_server",
+      "target": "demon",
+      "relation": "questions_worthiness_of"
+    },
+
+    {
+      "source": "wrath_avatar",
+      "target": "demon",
+      "relation": "manifests_from"
+    },
+
+    {
+      "source": "wrath_avatar",
+      "target": "demon",
+      "relation": "threatens_to_replace"
+    },
+
+    {
+      "source": "rage",
+      "target": "demon",
+      "relation": "empowers"
+    },
+
+    {
+      "source": "rage",
+      "target": "demon",
+      "relation": "consumes"
+    },
+
+    {
+      "source": "control",
+      "target": "demon",
+      "relation": "weakening"
+    },
+
+    {
+      "source": "ishan",
+      "target": "demon",
+      "relation": "observes_suffering_of"
+    },
+
+    {
+      "source": "ishan",
+      "target": "demon",
+      "relation": "chooses_not_to_attack"
+    },
+
+    {
+      "source": "peace_of_the_server",
+      "target": "wrath_of_the_server",
+      "relation": "witnesses_instability_of"
+    },
+
+    {
+      "source": "ishan",
+      "target": "wrath_avatar",
+      "relation": "prepares_to_face"
+    },
+
+    {
+      "source": "wrath_domain",
+      "target": "demon",
+      "relation": "amplifies_instability_of"
+    }
+  ],
+
+  "events": [
+    {
+      "id": "event_111",
+      "name": "Wrath Loses Stability",
+      "participants": [
+        "demon",
+        "wrath_of_the_server"
+      ]
+    },
+
+    {
+      "id": "event_112",
+      "name": "The Whispers Return",
+      "participants": [
+        "demon",
+        "shard_whispers"
+      ]
+    },
+
+    {
+      "id": "event_113",
+      "name": "Second Trial of Wrath",
+      "participants": [
+        "demon",
+        "wrath_of_the_server",
+        "consumption_trial"
+      ]
+    },
+
+    {
+      "id": "event_114",
+      "name": "Manifestation of the Wrath Avatar",
+      "participants": [
+        "demon",
+        "wrath_avatar"
+      ]
+    },
+
+    {
+      "id": "event_115",
+      "name": "Ishan Stops Fighting",
+      "participants": [
+        "ishan",
+        "demon"
+      ]
+    },
+
+    {
+      "id": "event_116",
+      "name": "Peace Witnesses Wrath's Collapse",
+      "participants": [
+        "ishan",
+        "peace_of_the_server",
+        "wrath_of_the_server"
+      ]
+    }
+  ],
+
+  "character_state_changes": [
+    {
+      "character": "demon",
+      "before": "monarch_of_wrath",
+      "after": "unstable_bearer"
+    },
+
+    {
+      "character": "demon",
+      "before": "believes_he_controls_wrath",
+      "after": "realizes_wrath_can_control_him"
+    },
+
+    {
+      "character": "ishan",
+      "before": "fighting_an_enemy",
+      "after": "witnessing_a_victim"
+    }
+  ],
+
+  "major_revelations": [
+    {
+      "id": "reveal_024",
+      "fact": "A shard can continue testing its bearer even after awakening."
+    },
+
+    {
+      "id": "reveal_025",
+      "fact": "Wrath can consume and replace an unworthy bearer."
+    },
+
+    {
+      "id": "reveal_026",
+      "fact": "The Wrath Avatar is formed from Demon's own rage."
+    },
+
+    {
+      "id": "reveal_027",
+      "fact": "Being chosen by a shard does not guarantee mastery over it."
+    }
+  ],
+
+  "season_arc_updates": [
+    {
+      "arc": "Peace vs Wrath",
+      "status": "temporarily_interrupted"
+    },
+
+    {
+      "arc": "Demon's Ascension",
+      "status": "destabilized"
+    },
+
+    {
+      "arc": "Wrath Consumption Trial",
+      "status": "active"
+    },
+
+    {
+      "arc": "Shard Bearer Convergence",
+      "status": "escalating"
+    }
+  ]
+}

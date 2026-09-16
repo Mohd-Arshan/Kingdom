@@ -1,0 +1,288 @@
+{
+  "chapter": {
+    "title": "Legends by Mistake",
+    "arc": "Overworld Arc",
+    "season": 1,
+    "type": "side_arc"
+  },
+
+  "nodes": [
+    { "id": "prosam", "type": "character" },
+    { "id": "ninja_hatori", "type": "character" },
+    { "id": "ayan", "type": "character" },
+    { "id": "zenestrio", "type": "character" },
+    { "id": "demonic", "type": "character" },
+    { "id": "demon", "type": "character" },
+
+    { "id": "infected_piglins", "type": "faction" },
+    { "id": "cured_piglins", "type": "faction" },
+
+    { "id": "pixelated_curse", "type": "condition" },
+
+    { "id": "golden_carrot", "type": "item" },
+    { "id": "beacon_blueprint", "type": "artifact" },
+    { "id": "beacon_structure", "type": "artifact" },
+
+    { "id": "temple_base", "type": "location" },
+    { "id": "nether_prison", "type": "location" },
+
+    { "id": "wrath_pulse", "type": "energy_event" },
+    { "id": "server_scream", "type": "phenomenon" },
+
+    { "id": "aj_vault", "type": "location" }
+  ],
+
+  "edges": [
+    {
+      "source": "prosam",
+      "target": "nether_prison",
+      "relation": "imprisoned_in"
+    },
+
+    {
+      "source": "ninja_hatori",
+      "target": "nether_prison",
+      "relation": "imprisoned_in"
+    },
+
+    {
+      "source": "wrath_pulse",
+      "target": "demon",
+      "relation": "originates_from_awakening_of"
+    },
+
+    {
+      "source": "wrath_pulse",
+      "target": "infected_piglins",
+      "relation": "temporarily_restores_speech"
+    },
+
+    {
+      "source": "golden_carrot",
+      "target": "pixelated_curse",
+      "relation": "partially_counteracts"
+    },
+
+    {
+      "source": "prosam",
+      "target": "golden_carrot",
+      "relation": "uses"
+    },
+
+    {
+      "source": "golden_carrot",
+      "target": "infected_piglins",
+      "relation": "cures"
+    },
+
+    {
+      "source": "infected_piglins",
+      "target": "cured_piglins",
+      "relation": "transforms_into"
+    },
+
+    {
+      "source": "cured_piglins",
+      "target": "prosam",
+      "relation": "worships_as_doctor"
+    },
+
+    {
+      "source": "cured_piglins",
+      "target": "ninja_hatori",
+      "relation": "worships_as_doctor"
+    },
+
+    {
+      "source": "ayan",
+      "target": "aj_vault",
+      "relation": "retrieves_resources_from"
+    },
+
+    {
+      "source": "zenestrio",
+      "target": "ayan",
+      "relation": "assists"
+    },
+
+    {
+      "source": "ayan",
+      "target": "beacon_structure",
+      "relation": "begins_construction_of"
+    },
+
+    {
+      "source": "beacon_blueprint",
+      "target": "beacon_structure",
+      "relation": "guides_construction"
+    },
+
+    {
+      "source": "wrath_pulse",
+      "target": "overworld",
+      "relation": "reaches"
+    },
+
+    {
+      "source": "wrath_pulse",
+      "target": "demonic",
+      "relation": "amplifies_corruption"
+    },
+
+    {
+      "source": "server_scream",
+      "target": "wrath_pulse",
+      "relation": "associated_with"
+    }
+  ],
+
+  "events": [
+    {
+      "id": "event_074",
+      "name": "Argument in the Nether Prison",
+      "participants": [
+        "prosam",
+        "ninja_hatori"
+      ]
+    },
+
+    {
+      "id": "event_075",
+      "name": "Wrath Pulse Reaches the Nether",
+      "participants": [
+        "demon",
+        "infected_piglins"
+      ]
+    },
+
+    {
+      "id": "event_076",
+      "name": "Piglins Regain Speech",
+      "participants": [
+        "infected_piglins"
+      ]
+    },
+
+    {
+      "id": "event_077",
+      "name": "Discovery of the Golden Carrot Cure",
+      "participants": [
+        "prosam",
+        "golden_carrot",
+        "infected_piglins"
+      ]
+    },
+
+    {
+      "id": "event_078",
+      "name": "Birth of the Doctor Legends",
+      "participants": [
+        "prosam",
+        "ninja_hatori",
+        "cured_piglins"
+      ]
+    },
+
+    {
+      "id": "event_079",
+      "name": "Recovery of AJ's Resources",
+      "participants": [
+        "ayan",
+        "zenestrio"
+      ]
+    },
+
+    {
+      "id": "event_080",
+      "name": "Beacon Construction Begins",
+      "participants": [
+        "ayan",
+        "beacon_structure"
+      ]
+    },
+
+    {
+      "id": "event_081",
+      "name": "Wrath Pulse Reaches the Overworld",
+      "participants": [
+        "ayan",
+        "zenestrio",
+        "demonic"
+      ]
+    },
+
+    {
+      "id": "event_082",
+      "name": "Demonic's Condition Worsens",
+      "participants": [
+        "demonic",
+        "pixelated_curse"
+      ]
+    }
+  ],
+
+  "character_state_changes": [
+    {
+      "character": "prosam",
+      "before": "captured_investigator",
+      "after": "accidental_healer"
+    },
+
+    {
+      "character": "ninja_hatori",
+      "before": "captured_investigator",
+      "after": "legendary_doctor_by_accident"
+    },
+
+    {
+      "character": "ayan",
+      "before": "collecting_resources",
+      "after": "actively_building_beacon"
+    },
+
+    {
+      "character": "demonic",
+      "before": "infected",
+      "after": "critically_corrupted"
+    }
+  ],
+
+  "discoveries": [
+    {
+      "id": "discovery_001",
+      "fact": "Golden Carrots can partially cure or suppress the Pixelated Curse."
+    },
+
+    {
+      "id": "discovery_002",
+      "fact": "Demon's awakening created a realm-wide Wrath Pulse."
+    },
+
+    {
+      "id": "discovery_003",
+      "fact": "The Wrath Pulse affects infected beings differently than normal entities."
+    }
+  ],
+
+  "season_arc_updates": [
+    {
+      "arc": "Beacon Construction",
+      "status": "started"
+    },
+
+    {
+      "arc": "Pixelated Curse",
+      "status": "possible_treatment_discovered"
+    },
+
+    {
+      "arc": "Doctor Legends",
+      "status": "started"
+    },
+
+    {
+      "arc": "Wrath Expansion",
+      "status": "affecting_multiple_realms"
+    }
+  ]
+}

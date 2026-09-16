@@ -1,0 +1,263 @@
+{
+  "chapter": {
+    "title": "The Forgotten Front",
+    "arc": "Overworld Arc",
+    "season": 1,
+    "type": "world_arc"
+  },
+
+  "nodes": [
+    { "id": "ayan", "type": "character" },
+    { "id": "aj", "type": "character" },
+    { "id": "zenestrio", "type": "character" },
+    { "id": "demonic", "type": "character" },
+    { "id": "ninja_hatori", "type": "character" },
+    { "id": "prosam", "type": "character" },
+
+    { "id": "forgotten_temple", "type": "location" },
+    { "id": "burning_plains", "type": "location" },
+    { "id": "cracked_nether", "type": "location" },
+    { "id": "core_scar", "type": "location" },
+
+    { "id": "heartcore_nexus", "type": "artifact" },
+    { "id": "pixelated_curse", "type": "condition" },
+
+    { "id": "infected_piglins", "type": "faction" },
+    { "id": "mutant_zombies", "type": "enemy_group" },
+
+    { "id": "fractured_core_energy", "type": "energy_source" },
+
+    { "id": "cracked_compass", "type": "artifact" },
+    { "id": "torn_map", "type": "artifact" }
+  ],
+
+  "edges": [
+    {
+      "source": "aj",
+      "target": "ayan",
+      "relation": "entrusted_recovery_mission_to"
+    },
+
+    {
+      "source": "ayan",
+      "target": "forgotten_temple",
+      "relation": "operates_from"
+    },
+
+    {
+      "source": "ayan",
+      "target": "zenestrio",
+      "relation": "recruits"
+    },
+
+    {
+      "source": "ayan",
+      "target": "demonic",
+      "relation": "attempts_to_save"
+    },
+
+    {
+      "source": "zenestrio",
+      "target": "demonic",
+      "relation": "protects"
+    },
+
+    {
+      "source": "pixelated_curse",
+      "target": "demonic",
+      "relation": "infects"
+    },
+
+    {
+      "source": "ayan",
+      "target": "zenestrio",
+      "relation": "forms_alliance"
+    },
+
+    {
+      "source": "zenestrio",
+      "target": "ayan",
+      "relation": "trusts"
+    },
+
+    {
+      "source": "ayan",
+      "target": "world_survivors",
+      "relation": "seeks_to_reunite"
+    },
+
+    {
+      "source": "ayan",
+      "target": "ninja_hatori",
+      "relation": "assigns_mission"
+    },
+
+    {
+      "source": "ayan",
+      "target": "prosam",
+      "relation": "assigns_mission"
+    },
+
+    {
+      "source": "ninja_hatori",
+      "target": "core_scar",
+      "relation": "investigates"
+    },
+
+    {
+      "source": "prosam",
+      "target": "core_scar",
+      "relation": "investigates"
+    },
+
+    {
+      "source": "heartcore_nexus",
+      "target": "fractured_core_energy",
+      "relation": "contains"
+    },
+
+    {
+      "source": "fractured_core_energy",
+      "target": "core_scar",
+      "relation": "emanates_from"
+    },
+
+    {
+      "source": "infected_piglins",
+      "target": "pixelated_curse",
+      "relation": "infected_by"
+    },
+
+    {
+      "source": "infected_piglins",
+      "target": "ninja_hatori",
+      "relation": "captures"
+    },
+
+    {
+      "source": "infected_piglins",
+      "target": "prosam",
+      "relation": "captures"
+    }
+  ],
+
+  "events": [
+    {
+      "id": "event_050",
+      "name": "Ayan Accepts AJ's Mission",
+      "participants": [
+        "ayan",
+        "aj"
+      ]
+    },
+
+    {
+      "id": "event_051",
+      "name": "Discovery of Demonic's Infection",
+      "participants": [
+        "demonic",
+        "zenestrio"
+      ]
+    },
+
+    {
+      "id": "event_052",
+      "name": "Alliance at the Burning Plains",
+      "participants": [
+        "ayan",
+        "zenestrio",
+        "demonic"
+      ]
+    },
+
+    {
+      "id": "event_053",
+      "name": "Nether Investigation Begins",
+      "participants": [
+        "ninja_hatori",
+        "prosam"
+      ]
+    },
+
+    {
+      "id": "event_054",
+      "name": "Discovery of the Heartcore Nexus",
+      "participants": [
+        "ninja_hatori",
+        "prosam",
+        "heartcore_nexus"
+      ]
+    },
+
+    {
+      "id": "event_055",
+      "name": "Infected Piglin Ambush",
+      "participants": [
+        "infected_piglins",
+        "ninja_hatori",
+        "prosam"
+      ]
+    },
+
+    {
+      "id": "event_056",
+      "name": "Capture of the Investigators",
+      "participants": [
+        "infected_piglins",
+        "ninja_hatori",
+        "prosam"
+      ]
+    }
+  ],
+
+  "character_state_changes": [
+    {
+      "character": "ayan",
+      "before": "supporting_leader",
+      "after": "coordinator_of_survivors"
+    },
+
+    {
+      "character": "zenestrio",
+      "before": "isolated_survivor",
+      "after": "allied_with_ayan"
+    },
+
+    {
+      "character": "demonic",
+      "before": "stable",
+      "after": "infected_by_pixelated_curse"
+    }
+  ],
+
+  "conditions": [
+    {
+      "id": "pixelated_curse",
+      "classification": "digital_corruption",
+      "known_hosts": [
+        "demonic",
+        "infected_piglins"
+      ],
+      "status": "spreading"
+    }
+  ],
+
+  "season_arc_updates": [
+    {
+      "arc": "Survivor Reunification",
+      "status": "active"
+    },
+    {
+      "arc": "Pixelated Curse",
+      "status": "spreading"
+    },
+    {
+      "arc": "Heartcore Nexus Mystery",
+      "status": "discovered"
+    },
+    {
+      "arc": "Nether Investigation",
+      "status": "failed_capture"
+    }
+  ]
+}

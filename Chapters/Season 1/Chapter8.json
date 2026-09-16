@@ -1,0 +1,283 @@
+{
+  "chapter": {
+    "title": "Scars and Signals",
+    "arc": "Overworld Arc",
+    "season": 1,
+    "type": "world_arc"
+  },
+
+  "nodes": [
+    { "id": "ayan", "type": "character" },
+    { "id": "zenestrio", "type": "character" },
+    { "id": "demonic", "type": "character" },
+    { "id": "aj", "type": "character" },
+    { "id": "pixel", "type": "character" },
+    { "id": "ninja_hatori", "type": "character" },
+    { "id": "prosam", "type": "character" },
+
+    { "id": "pixelated_curse", "type": "condition" },
+
+    { "id": "temple_base", "type": "location" },
+    { "id": "snow_biome", "type": "location" },
+    { "id": "forgotten_village", "type": "location" },
+    { "id": "underground_shelter", "type": "location" },
+
+    { "id": "backup_journal", "type": "artifact" },
+    { "id": "beacon_recipe", "type": "artifact" },
+
+    { "id": "code_realm", "type": "realm" },
+    { "id": "code_throne", "type": "location" },
+    { "id": "admin_code_cage", "type": "artifact" },
+
+    { "id": "server_shards", "type": "artifact_group" },
+    { "id": "shard_radiation", "type": "energy_source" }
+  ],
+
+  "edges": [
+    {
+      "source": "pixelated_curse",
+      "target": "demonic",
+      "relation": "continues_corrupting"
+    },
+
+    {
+      "source": "ayan",
+      "target": "demonic",
+      "relation": "attempts_to_cure"
+    },
+
+    {
+      "source": "ayan",
+      "target": "forgotten_village",
+      "relation": "investigates"
+    },
+
+    {
+      "source": "zenestrio",
+      "target": "ayan",
+      "relation": "supports_mission"
+    },
+
+    {
+      "source": "ayan",
+      "target": "ninja_hatori",
+      "relation": "searches_for"
+    },
+
+    {
+      "source": "ayan",
+      "target": "prosam",
+      "relation": "searches_for"
+    },
+
+    {
+      "source": "backup_journal",
+      "target": "aj",
+      "relation": "written_by"
+    },
+
+    {
+      "source": "backup_journal",
+      "target": "server_shards",
+      "relation": "documents"
+    },
+
+    {
+      "source": "backup_journal",
+      "target": "beacon_recipe",
+      "relation": "contains"
+    },
+
+    {
+      "source": "server_shards",
+      "target": "shard_radiation",
+      "relation": "emit"
+    },
+
+    {
+      "source": "server_shards",
+      "target": "realm_travel",
+      "relation": "cause"
+    },
+
+    {
+      "source": "pixel",
+      "target": "code_realm",
+      "relation": "controls"
+    },
+
+    {
+      "source": "pixel",
+      "target": "aj",
+      "relation": "imprisons"
+    },
+
+    {
+      "source": "aj",
+      "target": "admin_code_cage",
+      "relation": "confined_in"
+    },
+
+    {
+      "source": "admin_code_cage",
+      "target": "code_realm",
+      "relation": "located_in"
+    },
+
+    {
+      "source": "pixel",
+      "target": "all_players",
+      "relation": "monitors"
+    },
+
+    {
+      "source": "beacon_recipe",
+      "target": "server_shards",
+      "relation": "amplifies_signals_of"
+    }
+  ],
+
+  "events": [
+    {
+      "id": "event_057",
+      "name": "Failed Cure Attempt",
+      "participants": [
+        "ayan",
+        "demonic",
+        "pixelated_curse"
+      ]
+    },
+
+    {
+      "id": "event_058",
+      "name": "Journey to the Frozen North",
+      "participants": [
+        "ayan",
+        "zenestrio",
+        "demonic"
+      ]
+    },
+
+    {
+      "id": "event_059",
+      "name": "Discovery of the Forgotten Village",
+      "participants": [
+        "ayan",
+        "zenestrio"
+      ]
+    },
+
+    {
+      "id": "event_060",
+      "name": "Recovery of AJ's Backup Journal",
+      "participants": [
+        "ayan",
+        "backup_journal"
+      ]
+    },
+
+    {
+      "id": "event_061",
+      "name": "Shard Revelation",
+      "participants": [
+        "ayan",
+        "server_shards"
+      ]
+    },
+
+    {
+      "id": "event_062",
+      "name": "Beacon Recipe Discovery",
+      "participants": [
+        "ayan",
+        "beacon_recipe"
+      ]
+    },
+
+    {
+      "id": "event_063",
+      "name": "AJ Revealed Alive",
+      "participants": [
+        "aj",
+        "pixel"
+      ]
+    },
+
+    {
+      "id": "event_064",
+      "name": "Pixel's Surveillance Network",
+      "participants": [
+        "pixel"
+      ]
+    }
+  ],
+
+  "character_state_changes": [
+    {
+      "character": "ayan",
+      "before": "searching_for_answers",
+      "after": "possesses_critical_knowledge"
+    },
+
+    {
+      "character": "zenestrio",
+      "before": "uncertain",
+      "after": "hopeful"
+    },
+
+    {
+      "character": "aj",
+      "before": "missing",
+      "after": "confirmed_captured"
+    }
+  ],
+
+  "major_revelations": [
+    {
+      "id": "reveal_001",
+      "fact": "Heart of the Server shattered into multiple shards."
+    },
+
+    {
+      "id": "reveal_002",
+      "fact": "Each shard emits radiation and energy pulses."
+    },
+
+    {
+      "id": "reveal_003",
+      "fact": "The explosion transported nearby individuals into separate realms."
+    },
+
+    {
+      "id": "reveal_004",
+      "fact": "A beacon can amplify shard signals."
+    },
+
+    {
+      "id": "reveal_005",
+      "fact": "AJ is alive but imprisoned by Pixel in the Code Realm."
+    }
+  ],
+
+  "season_arc_updates": [
+    {
+      "arc": "AJ Rescue",
+      "status": "initiated"
+    },
+
+    {
+      "arc": "Shard Network",
+      "status": "explained"
+    },
+
+    {
+      "arc": "Pixel's Master Plan",
+      "status": "escalating"
+    },
+
+    {
+      "arc": "Pixelated Curse",
+      "status": "worsening"
+    }
+  ]
+}

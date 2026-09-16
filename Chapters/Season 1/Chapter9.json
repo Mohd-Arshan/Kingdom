@@ -1,0 +1,298 @@
+{
+  "chapter": {
+    "title": "The Awakening of Wrath",
+    "arc": "Demon Arc",
+    "season": 1,
+    "type": "character_arc"
+  },
+
+  "nodes": [
+    { "id": "demon", "type": "character" },
+    { "id": "ayan", "type": "character" },
+    { "id": "zenestrio", "type": "character" },
+    { "id": "demonic", "type": "character" },
+
+    { "id": "wrath_of_the_server", "type": "shard" },
+    { "id": "shard_voice", "type": "entity" },
+
+    { "id": "corrupted_nether", "type": "realm" },
+    { "id": "obsidian_crater", "type": "location" },
+    { "id": "trial_basin", "type": "location" },
+    { "id": "crimson_portal", "type": "location" },
+
+    { "id": "mutated_piglin_brutes", "type": "faction" },
+    { "id": "netherite_brute_champion", "type": "character" },
+
+    { "id": "wrath_axe", "type": "weapon" },
+
+    { "id": "rage", "type": "concept" },
+    { "id": "revenge", "type": "concept" },
+    { "id": "wrath", "type": "concept" }
+  ],
+
+  "edges": [
+    {
+      "source": "zenestrio",
+      "target": "demon",
+      "relation": "believes_alive"
+    },
+
+    {
+      "source": "demon",
+      "target": "corrupted_nether",
+      "relation": "awakens_in"
+    },
+
+    {
+      "source": "demon",
+      "target": "mutated_piglin_brutes",
+      "relation": "slaughters"
+    },
+
+    {
+      "source": "crimson_portal",
+      "target": "demon",
+      "relation": "guides_to_trial"
+    },
+
+    {
+      "source": "demon",
+      "target": "trial_basin",
+      "relation": "enters"
+    },
+
+    {
+      "source": "wrath_of_the_server",
+      "target": "demon",
+      "relation": "tests"
+    },
+
+    {
+      "source": "mutated_piglin_brutes",
+      "target": "demon",
+      "relation": "trial_guardians"
+    },
+
+    {
+      "source": "netherite_brute_champion",
+      "target": "demon",
+      "relation": "critically_wounds"
+    },
+
+    {
+      "source": "netherite_brute_champion",
+      "target": "wrath_of_the_server",
+      "relation": "accidentally_awakens"
+    },
+
+    {
+      "source": "shard_voice",
+      "target": "demon",
+      "relation": "reveals_meaning_of_wrath"
+    },
+
+    {
+      "source": "demon",
+      "target": "revenge",
+      "relation": "seeks"
+    },
+
+    {
+      "source": "demon",
+      "target": "rage",
+      "relation": "embodies"
+    },
+
+    {
+      "source": "wrath_of_the_server",
+      "target": "demon",
+      "relation": "chooses_as_bearer"
+    },
+
+    {
+      "source": "wrath_of_the_server",
+      "target": "demon",
+      "relation": "fuses_with"
+    },
+
+    {
+      "source": "wrath_of_the_server",
+      "target": "wrath_axe",
+      "relation": "creates"
+    },
+
+    {
+      "source": "wrath_axe",
+      "target": "demon",
+      "relation": "wielded_by"
+    },
+
+    {
+      "source": "demon",
+      "target": "netherite_brute_champion",
+      "relation": "executes"
+    },
+
+    {
+      "source": "mutated_piglin_brutes",
+      "target": "demon",
+      "relation": "submit_to"
+    },
+
+    {
+      "source": "demon",
+      "target": "mutated_piglin_brutes",
+      "relation": "rules_through_fear"
+    }
+  ],
+
+  "events": [
+    {
+      "id": "event_065",
+      "name": "Beacon Resource Crisis",
+      "participants": [
+        "ayan",
+        "zenestrio",
+        "demonic"
+      ]
+    },
+
+    {
+      "id": "event_066",
+      "name": "Demon's Awakening",
+      "participants": [
+        "demon"
+      ]
+    },
+
+    {
+      "id": "event_067",
+      "name": "Massacre of the Piglin Brutes",
+      "participants": [
+        "demon",
+        "mutated_piglin_brutes"
+      ]
+    },
+
+    {
+      "id": "event_068",
+      "name": "Crimson Portal Activation",
+      "participants": [
+        "demon",
+        "crimson_portal"
+      ]
+    },
+
+    {
+      "id": "event_069",
+      "name": "Trial of Wrath",
+      "participants": [
+        "demon",
+        "wrath_of_the_server"
+      ]
+    },
+
+    {
+      "id": "event_070",
+      "name": "Battle of the Basin",
+      "participants": [
+        "demon",
+        "mutated_piglin_brutes",
+        "netherite_brute_champion"
+      ]
+    },
+
+    {
+      "id": "event_071",
+      "name": "Awakening of Wrath",
+      "participants": [
+        "demon",
+        "wrath_of_the_server"
+      ]
+    },
+
+    {
+      "id": "event_072",
+      "name": "Creation of the Wrath Axe",
+      "participants": [
+        "demon",
+        "wrath_axe"
+      ]
+    },
+
+    {
+      "id": "event_073",
+      "name": "Rise of the Monarch",
+      "participants": [
+        "demon",
+        "mutated_piglin_brutes"
+      ]
+    }
+  ],
+
+  "character_state_changes": [
+    {
+      "character": "demon",
+      "before": "power_hungry_warlord",
+      "after": "bearer_of_wrath"
+    },
+
+    {
+      "character": "demon",
+      "before": "seeking_power",
+      "after": "embodiment_of_destruction"
+    },
+
+    {
+      "character": "demon",
+      "before": "isolated_survivor",
+      "after": "feared_monarch"
+    }
+  ],
+
+  "shards": [
+    {
+      "id": "wrath_of_the_server",
+      "type": "core_fragment",
+      "bearer": "demon",
+      "element": "wrath",
+      "purpose": "transform_pain_into_destruction",
+      "status": "awakened"
+    }
+  ],
+
+  "artifacts": [
+    {
+      "id": "wrath_axe",
+      "classification": "legendary_weapon",
+      "owner": "demon",
+      "status": "awakened"
+    }
+  ],
+
+  "titles": [
+    {
+      "holder": "demon",
+      "title": "Monarch of Wrath"
+    }
+  ],
+
+  "season_arc_updates": [
+    {
+      "arc": "Wrath of the Server",
+      "status": "awakened"
+    },
+    {
+      "arc": "Demon's Ascension",
+      "status": "completed"
+    },
+    {
+      "arc": "Piglin Dominion",
+      "status": "started"
+    },
+    {
+      "arc": "Shard Bearers",
+      "status": "4_of_5_awakened"
+    }
+  ]
+}

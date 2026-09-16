@@ -1,0 +1,305 @@
+{
+  "chapter": {
+    "title": "When Peace Meets Wrath",
+    "arc": "Convergence Arc",
+    "season": 1,
+    "type": "crossover_arc"
+  },
+
+  "nodes": [
+    { "id": "pixel", "type": "character" },
+    { "id": "demon", "type": "character" },
+    { "id": "ishan", "type": "character" },
+    { "id": "ayan", "type": "character" },
+    { "id": "demonic", "type": "character" },
+    { "id": "zenestrio", "type": "character" },
+    { "id": "prosam", "type": "character" },
+    { "id": "ninja_hatori", "type": "character" },
+
+    { "id": "peace_of_the_server", "type": "shard" },
+    { "id": "wrath_of_the_server", "type": "shard" },
+
+    { "id": "pixelated_curse", "type": "condition" },
+    { "id": "pixel_network", "type": "system" },
+
+    { "id": "beacon_structure", "type": "artifact" },
+    { "id": "beacon_blueprint", "type": "artifact" },
+
+    { "id": "code_realm", "type": "realm" },
+    { "id": "temple_base", "type": "location" },
+    { "id": "sky_realm", "type": "realm" },
+    { "id": "wrath_domain", "type": "realm" },
+
+    { "id": "sky_crack", "type": "portal" },
+    { "id": "throne_of_wrath", "type": "artifact" }
+  ],
+
+  "edges": [
+    {
+      "source": "pixel",
+      "target": "demon",
+      "relation": "fears_growth_of"
+    },
+
+    {
+      "source": "pixel",
+      "target": "pixelated_curse",
+      "relation": "losing_control_over"
+    },
+
+    {
+      "source": "demonic",
+      "target": "pixel_network",
+      "relation": "linked_to"
+    },
+
+    {
+      "source": "demonic",
+      "target": "pixel",
+      "relation": "shares_vision_with"
+    },
+
+    {
+      "source": "demonic",
+      "target": "pixelated_curse",
+      "relation": "partially_stabilized_by"
+    },
+
+    {
+      "source": "zenestrio",
+      "target": "demonic",
+      "relation": "protects"
+    },
+
+    {
+      "source": "prosam",
+      "target": "ayan",
+      "relation": "supports_beacon_project"
+    },
+
+    {
+      "source": "ninja_hatori",
+      "target": "ayan",
+      "relation": "supports_beacon_project"
+    },
+
+    {
+      "source": "prosam",
+      "target": "beacon_structure",
+      "relation": "supplies_resources_for"
+    },
+
+    {
+      "source": "ninja_hatori",
+      "target": "beacon_structure",
+      "relation": "supplies_resources_for"
+    },
+
+    {
+      "source": "ayan",
+      "target": "beacon_structure",
+      "relation": "constructs"
+    },
+
+    {
+      "source": "beacon_blueprint",
+      "target": "beacon_structure",
+      "relation": "defines_requirements_for"
+    },
+
+    {
+      "source": "wrath_of_the_server",
+      "target": "peace_of_the_server",
+      "relation": "resonates_with"
+    },
+
+    {
+      "source": "wrath_of_the_server",
+      "target": "ishan",
+      "relation": "summons"
+    },
+
+    {
+      "source": "ishan",
+      "target": "sky_crack",
+      "relation": "enters"
+    },
+
+    {
+      "source": "sky_crack",
+      "target": "wrath_domain",
+      "relation": "connects_to"
+    },
+
+    {
+      "source": "ishan",
+      "target": "demon",
+      "relation": "first_contact_since_fracture"
+    },
+
+    {
+      "source": "demon",
+      "target": "throne_of_wrath",
+      "relation": "occupies"
+    },
+
+    {
+      "source": "throne_of_wrath",
+      "target": "wrath_of_the_server",
+      "relation": "amplifies"
+    }
+  ],
+
+  "events": [
+    {
+      "id": "event_083",
+      "name": "Pixel Detects the Cure",
+      "participants": [
+        "pixel",
+        "pixelated_curse"
+      ]
+    },
+
+    {
+      "id": "event_084",
+      "name": "Demonic Connects to the Pixel Network",
+      "participants": [
+        "demonic",
+        "pixel"
+      ]
+    },
+
+    {
+      "id": "event_085",
+      "name": "Return of the Nether Explorers",
+      "participants": [
+        "prosam",
+        "ninja_hatori",
+        "ayan"
+      ]
+    },
+
+    {
+      "id": "event_086",
+      "name": "Beacon Completion Becomes Possible",
+      "participants": [
+        "ayan",
+        "prosam",
+        "ninja_hatori"
+      ]
+    },
+
+    {
+      "id": "event_087",
+      "name": "Wrath Pulse Reaches the Sky Realm",
+      "participants": [
+        "ishan",
+        "wrath_of_the_server"
+      ]
+    },
+
+    {
+      "id": "event_088",
+      "name": "The Sky Crack Opens",
+      "participants": [
+        "ishan",
+        "sky_crack"
+      ]
+    },
+
+    {
+      "id": "event_089",
+      "name": "Peace Enters the Domain of Wrath",
+      "participants": [
+        "ishan",
+        "demon"
+      ]
+    },
+
+    {
+      "id": "event_090",
+      "name": "First Meeting of Shard Bearers",
+      "participants": [
+        "ishan",
+        "demon",
+        "peace_of_the_server",
+        "wrath_of_the_server"
+      ]
+    }
+  ],
+
+  "character_state_changes": [
+    {
+      "character": "demonic",
+      "before": "corrupted_victim",
+      "after": "living_surveillance_link"
+    },
+
+    {
+      "character": "ayan",
+      "before": "lacking_resources",
+      "after": "beacon_nearly_complete"
+    },
+
+    {
+      "character": "ishan",
+      "before": "realm_explorer",
+      "after": "confronting_wrath"
+    },
+
+    {
+      "character": "pixel",
+      "before": "mastermind_in_control",
+      "after": "losing_control"
+    }
+  ],
+
+  "major_revelations": [
+    {
+      "id": "reveal_006",
+      "fact": "Demonic can see information from Pixel's perspective."
+    },
+
+    {
+      "id": "reveal_007",
+      "fact": "The Pixelated Curse is becoming unstable due to the discovered cure."
+    },
+
+    {
+      "id": "reveal_008",
+      "fact": "The beacon can now potentially be completed."
+    },
+
+    {
+      "id": "reveal_009",
+      "fact": "Wrath and Peace shards can detect or influence each other across realms."
+    }
+  ],
+
+  "season_arc_updates": [
+    {
+      "arc": "Beacon Construction",
+      "status": "near_completion"
+    },
+
+    {
+      "arc": "Pixelated Curse",
+      "status": "destabilizing"
+    },
+
+    {
+      "arc": "Peace vs Wrath",
+      "status": "first_contact"
+    },
+
+    {
+      "arc": "Pixel's Control",
+      "status": "weakening"
+    },
+
+    {
+      "arc": "Shard Bearer Convergence",
+      "status": "initiated"
+    }
+  ]
+}

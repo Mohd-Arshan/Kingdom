@@ -1,0 +1,278 @@
+{
+  "chapter": {
+    "title": "Void Part III",
+    "season": 2,
+    "chapter_number": 5,
+    "arc": "Void Arc",
+    "type": "major_battle"
+  },
+
+  "nodes": [
+    {"id":"zitsu","type":"character"},
+    {"id":"pixel","type":"character"},
+    {"id":"dark_zitsu","type":"shadow_entity"},
+    {"id":"zenestrio","type":"character"},
+    {"id":"demonic","type":"character"},
+
+    {"id":"soul_of_the_server","type":"shard"},
+    {"id":"mind_of_the_server","type":"shard"},
+
+    {"id":"soul_saviour","type":"weapon"},
+    {"id":"diamond_sword","type":"weapon"},
+
+    {"id":"absolute_awareness","type":"ability"},
+    {"id":"command_rewrite","type":"ability"},
+
+    {"id":"speed_amplification","type":"effect"},
+    {"id":"damage_amplification","type":"effect"},
+
+    {"id":"battlefield","type":"location"}
+  ],
+
+  "edges": [
+    {
+      "source":"pixel",
+      "target":"zitsu",
+      "relation":"offers_alliance_to"
+    },
+
+    {
+      "source":"zitsu",
+      "target":"pixel",
+      "relation":"rejects"
+    },
+
+    {
+      "source":"pixel",
+      "target":"command_rewrite",
+      "relation":"uses"
+    },
+
+    {
+      "source":"command_rewrite",
+      "target":"speed_amplification",
+      "relation":"creates"
+    },
+
+    {
+      "source":"command_rewrite",
+      "target":"damage_amplification",
+      "relation":"creates"
+    },
+
+    {
+      "source":"zitsu",
+      "target":"absolute_awareness",
+      "relation":"awakens"
+    },
+
+    {
+      "source":"absolute_awareness",
+      "target":"pixel",
+      "relation":"tracks_movements_of"
+    },
+
+    {
+      "source":"dark_zitsu",
+      "target":"zitsu",
+      "relation":"guides"
+    },
+
+    {
+      "source":"pixel",
+      "target":"mind_of_the_server",
+      "relation":"overloads"
+    },
+
+    {
+      "source":"mind_of_the_server",
+      "target":"pixel",
+      "relation":"damages_body_of"
+    },
+
+    {
+      "source":"zitsu",
+      "target":"pixel",
+      "relation":"forces_to_extreme_limits"
+    },
+
+    {
+      "source":"zenestrio",
+      "target":"pixel",
+      "relation":"intercepts_final_attack"
+    },
+
+    {
+      "source":"zenestrio",
+      "target":"zitsu",
+      "relation":"saves"
+    },
+
+    {
+      "source":"demonic",
+      "target":"zitsu",
+      "relation":"provides_final_warning"
+    },
+
+    {
+      "source":"pixel",
+      "target":"unconsciousness",
+      "relation":"collapses_into"
+    }
+  ],
+
+  "events": [
+    {
+      "id":"s2_event_031",
+      "name":"Pixel Offers Alliance",
+      "participants":[
+        "pixel",
+        "zitsu"
+      ]
+    },
+
+    {
+      "id":"s2_event_032",
+      "name":"Code Cube Prison Destroyed",
+      "participants":[
+        "zitsu",
+        "pixel"
+      ]
+    },
+
+    {
+      "id":"s2_event_033",
+      "name":"Mind Shard Speed Enhancement",
+      "participants":[
+        "pixel"
+      ]
+    },
+
+    {
+      "id":"s2_event_034",
+      "name":"Absolute Awareness Awakens",
+      "participants":[
+        "zitsu"
+      ]
+    },
+
+    {
+      "id":"s2_event_035",
+      "name":"Command Rewrite Maximum Output",
+      "participants":[
+        "pixel"
+      ]
+    },
+
+    {
+      "id":"s2_event_036",
+      "name":"Final Strike Attempt",
+      "participants":[
+        "pixel",
+        "zitsu"
+      ]
+    },
+
+    {
+      "id":"s2_event_037",
+      "name":"Demonic's Intervention",
+      "participants":[
+        "demonic",
+        "zitsu"
+      ]
+    },
+
+    {
+      "id":"s2_event_038",
+      "name":"Zenestrio Saves Zitsu",
+      "participants":[
+        "zenestrio",
+        "zitsu",
+        "pixel"
+      ]
+    },
+
+    {
+      "id":"s2_event_039",
+      "name":"Pixel Falls Unconscious",
+      "participants":[
+        "pixel"
+      ]
+    }
+  ],
+
+  "character_state_changes": [
+    {
+      "character":"zitsu",
+      "before":"soul_second_form",
+      "after":"absolute_awareness_master"
+    },
+
+    {
+      "character":"pixel",
+      "before":"battlefield_controller",
+      "after":"collapsed_from_overload"
+    },
+
+    {
+      "character":"zenestrio",
+      "before":"support_character",
+      "after":"battlefield_savior"
+    },
+
+    {
+      "character":"demonic",
+      "before":"information_source",
+      "after":"battlefield_observer"
+    }
+  ],
+
+  "major_revelations": [
+    {
+      "id":"reveal_052",
+      "fact":"Soul Shard users can develop Absolute Awareness."
+    },
+
+    {
+      "id":"reveal_053",
+      "fact":"Command Rewrite has severe mental strain and physical backlash."
+    },
+
+    {
+      "id":"reveal_054",
+      "fact":"Pixel's powers are not limitless."
+    },
+
+    {
+      "id":"reveal_055",
+      "fact":"Demonic can relay real-time information from Pixel's perspective."
+    },
+
+    {
+      "id":"reveal_056",
+      "fact":"Zenestrio is capable of intercepting attacks beyond Zitsu's reaction speed."
+    }
+  ],
+
+  "season_arc_updates": [
+    {
+      "arc":"Pixel vs Zitsu",
+      "status":"pixel_defeated"
+    },
+
+    {
+      "arc":"Soul Shard Evolution",
+      "status":"advanced"
+    },
+
+    {
+      "arc":"Mind Shard Limitations",
+      "status":"revealed"
+    },
+
+    {
+      "arc":"Void Convergence",
+      "status":"heroes_reuniting"
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "chapter": {
+    "title": "Almost",
+    "arc": "Convergence Arc",
+    "season": 1,
+    "type": "cross_realm_arc"
+  },
+
+  "nodes": [
+    { "id": "demon", "type": "character" },
+    { "id": "ishan", "type": "character" },
+    { "id": "zitsu", "type": "character" },
+    { "id": "dark_zitsu", "type": "shadow_entity" },
+    { "id": "mightsta", "type": "character" },
+    { "id": "ayan", "type": "character" },
+    { "id": "prosam", "type": "character" },
+    { "id": "ninja_hatori", "type": "character" },
+    { "id": "zenestrio", "type": "character" },
+    { "id": "demonic", "type": "character" },
+
+    { "id": "wrath_of_the_server", "type": "shard" },
+    { "id": "peace_of_the_server", "type": "shard" },
+    { "id": "will_of_the_server", "type": "shard" },
+    { "id": "soul_of_the_server", "type": "shard" },
+
+    { "id": "soul_severer", "type": "weapon" },
+    { "id": "mightsta_trident", "type": "weapon" },
+    { "id": "wrath_axe", "type": "weapon" },
+
+    { "id": "wrath_pulse", "type": "energy_event" },
+    { "id": "beacon_structure", "type": "artifact" },
+
+    { "id": "jungle_realm", "type": "realm" },
+    { "id": "soul_realm", "type": "realm" },
+    { "id": "wrath_domain", "type": "realm" },
+    { "id": "temple_base", "type": "location" }
+  ],
+
+  "edges": [
+    {
+      "source": "wrath_of_the_server",
+      "target": "wrath_pulse",
+      "relation": "generates"
+    },
+
+    {
+      "source": "wrath_pulse",
+      "target": "jungle_realm",
+      "relation": "reaches"
+    },
+
+    {
+      "source": "wrath_pulse",
+      "target": "soul_realm",
+      "relation": "reaches"
+    },
+
+    {
+      "source": "wrath_pulse",
+      "target": "wrath_domain",
+      "relation": "originates_from"
+    },
+
+    {
+      "source": "will_of_the_server",
+      "target": "mightsta",
+      "relation": "warns"
+    },
+
+    {
+      "source": "mightsta_trident",
+      "target": "wrath_pulse",
+      "relation": "reacts_to"
+    },
+
+    {
+      "source": "soul_of_the_server",
+      "target": "zitsu",
+      "relation": "warns"
+    },
+
+    {
+      "source": "dark_zitsu",
+      "target": "wrath_of_the_server",
+      "relation": "identifies"
+    },
+
+    {
+      "source": "zitsu",
+      "target": "wrath_of_the_server",
+      "relation": "recognizes_threat"
+    },
+
+    {
+      "source": "soul_severer",
+      "target": "wrath_pulse",
+      "relation": "reacts_to"
+    },
+
+    {
+      "source": "ishan",
+      "target": "demon",
+      "relation": "battles"
+    },
+
+    {
+      "source": "peace_of_the_server",
+      "target": "wrath_of_the_server",
+      "relation": "opposes"
+    },
+
+    {
+      "source": "wrath_axe",
+      "target": "ishan",
+      "relation": "attacks"
+    },
+
+    {
+      "source": "ishan",
+      "target": "demon",
+      "relation": "resists"
+    },
+
+    {
+      "source": "ayan",
+      "target": "beacon_structure",
+      "relation": "completes"
+    },
+
+    {
+      "source": "prosam",
+      "target": "beacon_structure",
+      "relation": "provides_final_materials"
+    },
+
+    {
+      "source": "ninja_hatori",
+      "target": "beacon_structure",
+      "relation": "provides_final_materials"
+    },
+
+    {
+      "source": "zenestrio",
+      "target": "demonic",
+      "relation": "monitors"
+    },
+
+    {
+      "source": "beacon_structure",
+      "target": "server",
+      "relation": "attempts_contact_with"
+    },
+
+    {
+      "source": "beacon_structure",
+      "target": "silence",
+      "relation": "receives"
+    }
+  ],
+
+  "events": [
+    {
+      "id": "event_098",
+      "name": "Wrath Pulse Across Realms",
+      "participants": [
+        "demon",
+        "wrath_pulse",
+        "mightsta",
+        "zitsu"
+      ]
+    },
+
+    {
+      "id": "event_099",
+      "name": "Will Shard Warning",
+      "participants": [
+        "mightsta",
+        "will_of_the_server"
+      ]
+    },
+
+    {
+      "id": "event_100",
+      "name": "Soul Shard Recognition",
+      "participants": [
+        "zitsu",
+        "dark_zitsu",
+        "soul_of_the_server"
+      ]
+    },
+
+    {
+      "id": "event_101",
+      "name": "Peace versus Wrath Begins",
+      "participants": [
+        "ishan",
+        "demon"
+      ]
+    },
+
+    {
+      "id": "event_102",
+      "name": "First Direct Clash of Shards",
+      "participants": [
+        "peace_of_the_server",
+        "wrath_of_the_server"
+      ]
+    },
+
+    {
+      "id": "event_103",
+      "name": "Final Beacon Layer Completed",
+      "participants": [
+        "ayan",
+        "prosam",
+        "ninja_hatori",
+        "beacon_structure"
+      ]
+    },
+
+    {
+      "id": "event_104",
+      "name": "Beacon Activation Failure",
+      "participants": [
+        "ayan",
+        "beacon_structure"
+      ]
+    }
+  ],
+
+  "character_state_changes": [
+    {
+      "character": "ishan",
+      "before": "optimistic_explorer",
+      "after": "active_shard_combatant"
+    },
+
+    {
+      "character": "demon",
+      "before": "awakened_monarch",
+      "after": "engaged_in_shard_war"
+    },
+
+    {
+      "character": "zitsu",
+      "before": "searching_for_answers",
+      "after": "aware_of_wrath_threat"
+    },
+
+    {
+      "character": "ayan",
+      "before": "building_beacon",
+      "after": "facing_failure"
+    }
+  ],
+
+  "major_revelations": [
+    {
+      "id": "reveal_015",
+      "fact": "Wrath's awakening can be sensed by other shard bearers across realms."
+    },
+
+    {
+      "id": "reveal_016",
+      "fact": "Soul and Will shards automatically react to Wrath's energy."
+    },
+
+    {
+      "id": "reveal_017",
+      "fact": "The completed beacon failed to produce the expected result."
+    },
+
+    {
+      "id": "reveal_018",
+      "fact": "The silence after beacon activation appears intentional rather than accidental."
+    }
+  ],
+
+  "season_arc_updates": [
+    {
+      "arc": "Peace vs Wrath",
+      "status": "battle_started"
+    },
+
+    {
+      "arc": "Beacon Project",
+      "status": "activation_failed"
+    },
+
+    {
+      "arc": "Shard Resonance",
+      "status": "confirmed"
+    },
+
+    {
+      "arc": "Convergence Phase",
+      "status": "accelerating"
+    }
+  ]
+}

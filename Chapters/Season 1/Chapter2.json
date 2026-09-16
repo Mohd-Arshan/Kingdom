@@ -1,0 +1,243 @@
+{
+  "chapter": {
+    "title": "Heart of the Server",
+    "season": 1,
+    "type": "story_chapter"
+  },
+
+  "nodes": [
+    {"id": "zitsu", "type": "character"},
+    {"id": "ishan", "type": "character"},
+    {"id": "mightsta", "type": "character"},
+    {"id": "aj", "type": "character"},
+    {"id": "demon", "type": "character"},
+
+    {"id": "echo_vault_ruins", "type": "location"},
+    {"id": "demons_secret_chamber", "type": "location"},
+    {"id": "hidden_library", "type": "location"},
+    {"id": "final_temple", "type": "location"},
+    {"id": "new_world", "type": "location"},
+
+    {"id": "heart_of_the_server", "type": "artifact"},
+    {"id": "ancient_book", "type": "artifact"}
+  ],
+
+  "edges": [
+    {
+      "source": "zitsu",
+      "target": "echo_vault_ruins",
+      "relation": "investigates"
+    },
+    {
+      "source": "ishan",
+      "target": "zitsu",
+      "relation": "encourages"
+    },
+
+    {
+      "source": "mightsta",
+      "target": "demon",
+      "relation": "confronts"
+    },
+    {
+      "source": "demon",
+      "target": "pixel",
+      "relation": "used_as_pawn"
+    },
+
+    {
+      "source": "aj",
+      "target": "ancient_book",
+      "relation": "possesses"
+    },
+    {
+      "source": "aj",
+      "target": "zitsu",
+      "relation": "entrusts_mission"
+    },
+    {
+      "source": "ancient_book",
+      "target": "heart_of_the_server",
+      "relation": "contains_secrets_of"
+    },
+
+    {
+      "source": "zitsu",
+      "target": "mightsta",
+      "relation": "forms_alliance"
+    },
+    {
+      "source": "zitsu",
+      "target": "ishan",
+      "relation": "forms_alliance"
+    },
+    {
+      "source": "mightsta",
+      "target": "ishan",
+      "relation": "travels_with"
+    },
+
+    {
+      "source": "zitsu",
+      "target": "heart_of_the_server",
+      "relation": "seeks"
+    },
+    {
+      "source": "mightsta",
+      "target": "heart_of_the_server",
+      "relation": "seeks"
+    },
+    {
+      "source": "ishan",
+      "target": "heart_of_the_server",
+      "relation": "seeks"
+    },
+
+    {
+      "source": "demon",
+      "target": "heart_of_the_server",
+      "relation": "attempts_to_control"
+    },
+
+    {
+      "source": "mightsta",
+      "target": "demon",
+      "relation": "accuses_of_betrayal"
+    },
+
+    {
+      "source": "ishan",
+      "target": "heart_of_the_server",
+      "relation": "accidentally_activates"
+    },
+
+    {
+      "source": "heart_of_the_server",
+      "target": "new_world",
+      "relation": "causes_teleportation_to"
+    },
+
+    {
+      "source": "zitsu",
+      "target": "new_world",
+      "relation": "awakens_in"
+    }
+  ],
+
+  "events": [
+    {
+      "id": "event_009",
+      "name": "Echo Vault Reflection",
+      "participants": [
+        "zitsu",
+        "ishan"
+      ]
+    },
+
+    {
+      "id": "event_010",
+      "name": "Demon Reveals His True Goal",
+      "participants": [
+        "demon",
+        "mightsta"
+      ]
+    },
+
+    {
+      "id": "event_011",
+      "name": "AJ Entrusts Zitsu",
+      "participants": [
+        "aj",
+        "zitsu"
+      ]
+    },
+
+    {
+      "id": "event_012",
+      "name": "Formation of the Expedition Team",
+      "participants": [
+        "zitsu",
+        "mightsta",
+        "ishan"
+      ]
+    },
+
+    {
+      "id": "event_013",
+      "name": "Journey Across the World",
+      "participants": [
+        "zitsu",
+        "mightsta",
+        "ishan"
+      ]
+    },
+
+    {
+      "id": "event_014",
+      "name": "Discovery of the Heart of the Server",
+      "participants": [
+        "zitsu",
+        "mightsta",
+        "ishan",
+        "demon"
+      ]
+    },
+
+    {
+      "id": "event_015",
+      "name": "Temple Confrontation",
+      "participants": [
+        "zitsu",
+        "mightsta",
+        "ishan",
+        "demon"
+      ]
+    },
+
+    {
+      "id": "event_016",
+      "name": "Heart Activation",
+      "participants": [
+        "ishan",
+        "heart_of_the_server"
+      ]
+    },
+
+    {
+      "id": "event_017",
+      "name": "Server-Wide Teleportation",
+      "participants": [
+        "zitsu",
+        "mightsta",
+        "ishan",
+        "demon"
+      ]
+    },
+
+    {
+      "id": "event_018",
+      "name": "Arrival in the New World",
+      "participants": [
+        "zitsu"
+      ]
+    }
+  ],
+
+  "character_state_changes": [
+    {
+      "character": "zitsu",
+      "before": "self_doubt",
+      "after": "accepting_responsibility"
+    },
+    {
+      "character": "mightsta",
+      "before": "distrustful",
+      "after": "committed_to_stopping_demon"
+    },
+    {
+      "character": "demon",
+      "before": "hidden_agenda",
+      "after": "open_pursuit_of_power"
+    }
+  ]
+}

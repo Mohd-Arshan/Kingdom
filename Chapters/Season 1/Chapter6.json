@@ -1,0 +1,278 @@
+{
+  "chapter": {
+    "title": "Will of the Server",
+    "arc": "Mightsta Arc",
+    "season": 1,
+    "type": "character_arc"
+  },
+
+  "nodes": [
+    { "id": "mightsta", "type": "character" },
+    { "id": "aj", "type": "character" },
+    { "id": "demon", "type": "character" },
+    { "id": "ishan", "type": "character" },
+    { "id": "zitsu", "type": "character" },
+
+    { "id": "living_jungle", "type": "realm" },
+    { "id": "radiated_clearing", "type": "location" },
+
+    { "id": "will_of_the_server", "type": "shard" },
+    { "id": "shard_voice", "type": "entity" },
+
+    { "id": "mightsta_trident", "type": "weapon" },
+    { "id": "animated_rock", "type": "creature" },
+    { "id": "living_butterfly", "type": "creature" },
+
+    { "id": "guilt", "type": "concept" },
+    { "id": "redemption", "type": "concept" },
+    { "id": "determination", "type": "concept" }
+  ],
+
+  "edges": [
+    {
+      "source": "mightsta",
+      "target": "living_jungle",
+      "relation": "stranded_in"
+    },
+
+    {
+      "source": "will_of_the_server",
+      "target": "living_jungle",
+      "relation": "mutates_environment"
+    },
+
+    {
+      "source": "will_of_the_server",
+      "target": "animated_rock",
+      "relation": "creates_life_in"
+    },
+
+    {
+      "source": "will_of_the_server",
+      "target": "living_butterfly",
+      "relation": "creates_life_in"
+    },
+
+    {
+      "source": "mightsta",
+      "target": "will_of_the_server",
+      "relation": "experiments_with"
+    },
+
+    {
+      "source": "mightsta_trident",
+      "target": "will_of_the_server",
+      "relation": "thrown_into"
+    },
+
+    {
+      "source": "will_of_the_server",
+      "target": "mightsta",
+      "relation": "pulls_toward"
+    },
+
+    {
+      "source": "shard_voice",
+      "target": "mightsta",
+      "relation": "tests_willpower"
+    },
+
+    {
+      "source": "will_of_the_server",
+      "target": "mightsta",
+      "relation": "forces_self_reflection"
+    },
+
+    {
+      "source": "mightsta",
+      "target": "guilt",
+      "relation": "accepts"
+    },
+
+    {
+      "source": "mightsta",
+      "target": "redemption",
+      "relation": "pursues"
+    },
+
+    {
+      "source": "mightsta",
+      "target": "determination",
+      "relation": "embodies"
+    },
+
+    {
+      "source": "will_of_the_server",
+      "target": "mightsta",
+      "relation": "chooses_as_bearer"
+    },
+
+    {
+      "source": "will_of_the_server",
+      "target": "mightsta_trident",
+      "relation": "reforges"
+    },
+
+    {
+      "source": "mightsta",
+      "target": "mightsta_trident",
+      "relation": "wields"
+    },
+
+    {
+      "source": "mightsta",
+      "target": "aj",
+      "relation": "seeks_to_redeem_failures_against"
+    },
+
+    {
+      "source": "mightsta",
+      "target": "demon",
+      "relation": "rejects_past_allegiance"
+    },
+
+    {
+      "source": "will_of_the_server",
+      "target": "ishan",
+      "relation": "sends_stable_pulse_to"
+    }
+  ],
+
+  "events": [
+    {
+      "id": "event_041",
+      "name": "Arrival in the Living Jungle",
+      "participants": [
+        "mightsta"
+      ]
+    },
+
+    {
+      "id": "event_042",
+      "name": "Discovery of the Radiating Shard",
+      "participants": [
+        "mightsta",
+        "will_of_the_server"
+      ]
+    },
+
+    {
+      "id": "event_043",
+      "name": "Life Creation Experiment",
+      "participants": [
+        "mightsta",
+        "animated_rock",
+        "living_butterfly"
+      ]
+    },
+
+    {
+      "id": "event_044",
+      "name": "Reverse Loyalty Incident",
+      "participants": [
+        "mightsta",
+        "mightsta_trident",
+        "will_of_the_server"
+      ]
+    },
+
+    {
+      "id": "event_045",
+      "name": "Trial of Will",
+      "participants": [
+        "mightsta",
+        "shard_voice"
+      ]
+    },
+
+    {
+      "id": "event_046",
+      "name": "Acceptance of Past Mistakes",
+      "participants": [
+        "mightsta"
+      ]
+    },
+
+    {
+      "id": "event_047",
+      "name": "Shard Chooses Mightsta",
+      "participants": [
+        "mightsta",
+        "will_of_the_server"
+      ]
+    },
+
+    {
+      "id": "event_048",
+      "name": "Reforging of the Trident",
+      "participants": [
+        "mightsta",
+        "mightsta_trident"
+      ]
+    },
+
+    {
+      "id": "event_049",
+      "name": "Pulse Reaches Ishan",
+      "participants": [
+        "mightsta",
+        "ishan"
+      ]
+    }
+  ],
+
+  "character_state_changes": [
+    {
+      "character": "mightsta",
+      "before": "seeking_redemption",
+      "after": "self_accepted"
+    },
+
+    {
+      "character": "mightsta",
+      "before": "burdened_by_guilt",
+      "after": "driven_by_purpose"
+    },
+
+    {
+      "character": "mightsta",
+      "before": "survivor",
+      "after": "chosen_bearer"
+    }
+  ],
+
+  "shards": [
+    {
+      "id": "will_of_the_server",
+      "type": "core_fragment",
+      "bearer": "mightsta",
+      "element": "willpower",
+      "purpose": "perseverance_and_redemption",
+      "status": "awakened"
+    }
+  ],
+
+  "artifacts": [
+    {
+      "id": "mightsta_trident",
+      "classification": "legendary_weapon",
+      "owner": "mightsta",
+      "status": "reforged_by_shard"
+    }
+  ],
+
+  "season_arc_updates": [
+    {
+      "arc": "Will of the Server",
+      "status": "awakened"
+    },
+    {
+      "arc": "Mightsta's Redemption",
+      "status": "completed"
+    },
+    {
+      "arc": "Shard Bearers Unite",
+      "status": "progressing"
+    }
+  ]
+}

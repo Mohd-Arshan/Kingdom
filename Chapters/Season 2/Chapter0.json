@@ -1,0 +1,166 @@
+{
+  "chapter": {
+    "title": "The Peace Before The Storm",
+    "season": 2,
+    "chapter_number": 0,
+    "type": "convergence_trigger"
+  },
+
+  "nodes": [
+    {"id":"mightsta","type":"character"},
+    {"id":"zitsu","type":"character"},
+    {"id":"ishan","type":"character"},
+    {"id":"demon","type":"character"},
+    {"id":"pixel","type":"character"},
+    {"id":"ayan","type":"character"},
+    {"id":"demonic","type":"character"},
+    {"id":"zenestrio","type":"character"},
+    {"id":"ninja_hatori","type":"character"},
+    {"id":"prosam","type":"character"},
+
+    {"id":"void_shard","type":"shard"},
+    {"id":"wrath_shard","type":"shard"},
+    {"id":"peace_shard","type":"shard"},
+
+    {"id":"jungle_library","type":"location"},
+    {"id":"nether_realm","type":"realm"},
+    {"id":"broken_dimension","type":"realm"},
+    {"id":"glitched_realm","type":"realm"},
+
+    {"id":"convergence_portal","type":"portal"},
+    {"id":"heart_of_the_server_book","type":"artifact"}
+  ],
+
+  "edges": [
+    {
+      "source":"mightsta",
+      "target":"heart_of_the_server_book",
+      "relation":"discovers"
+    },
+
+    {
+      "source":"heart_of_the_server_book",
+      "target":"void_shard",
+      "relation":"contains_clue_about"
+    },
+
+    {
+      "source":"heart_of_the_server_book",
+      "target":"wrath_shard",
+      "relation":"contains_lore_about"
+    },
+
+    {
+      "source":"heart_of_the_server_book",
+      "target":"peace_shard",
+      "relation":"contains_partial_lore_about"
+    },
+
+    {
+      "source":"convergence_portal",
+      "target":"mightsta",
+      "relation":"summons"
+    },
+
+    {
+      "source":"convergence_portal",
+      "target":"zitsu",
+      "relation":"summons"
+    },
+
+    {
+      "source":"convergence_portal",
+      "target":"demon",
+      "relation":"summons"
+    },
+
+    {
+      "source":"convergence_portal",
+      "target":"ishan",
+      "relation":"summons"
+    },
+
+    {
+      "source":"pixel",
+      "target":"convergence_portal",
+      "relation":"observes"
+    },
+
+    {
+      "source":"pixel",
+      "target":"aj",
+      "relation":"angered_by_escape_of"
+    },
+
+    {
+      "source":"wrath_shard",
+      "target":"demon",
+      "relation":"continues_corrupting"
+    },
+
+    {
+      "source":"peace_shard",
+      "target":"ishan",
+      "relation":"enhances_reaction_speed"
+    }
+  ],
+
+  "events":[
+    {
+      "id":"s2_event_001",
+      "name":"Mist Covers Temple Alliance",
+      "participants":[
+        "ayan",
+        "demonic",
+        "zenestrio",
+        "ninja_hatori",
+        "prosam"
+      ]
+    },
+
+    {
+      "id":"s2_event_002",
+      "name":"Mightsta Finds Ancient Library",
+      "participants":[
+        "mightsta"
+      ]
+    },
+
+    {
+      "id":"s2_event_003",
+      "name":"Void Prophecy Discovered",
+      "participants":[
+        "mightsta",
+        "heart_of_the_server_book"
+      ]
+    },
+
+    {
+      "id":"s2_event_004",
+      "name":"Peace Versus Wrath Continues",
+      "participants":[
+        "ishan",
+        "demon"
+      ]
+    },
+
+    {
+      "id":"s2_event_005",
+      "name":"Convergence Portal Appears",
+      "participants":[
+        "mightsta",
+        "ishan",
+        "demon",
+        "zitsu"
+      ]
+    },
+
+    {
+      "id":"s2_event_006",
+      "name":"Pixel Chooses Observation",
+      "participants":[
+        "pixel"
+      ]
+    }
+  ]
+}

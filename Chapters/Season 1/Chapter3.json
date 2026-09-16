@@ -1,0 +1,257 @@
+{
+  "chapter": {
+    "title": "The Fractured Realms",
+    "season": 1,
+    "type": "story_chapter"
+  },
+
+  "nodes": [
+    {"id": "aj", "type": "character"},
+    {"id": "zitsu", "type": "character"},
+    {"id": "ishan", "type": "character"},
+    {"id": "mightsta", "type": "character"},
+    {"id": "demon", "type": "character"},
+    {"id": "pixel", "type": "character"},
+
+    {"id": "heart_of_the_server", "type": "artifact"},
+    {"id": "heart_fragment", "type": "artifact"},
+    {"id": "server_history_book", "type": "artifact"},
+
+    {"id": "overworld", "type": "realm"},
+    {"id": "unknown_realm", "type": "realm"},
+    {"id": "skylands", "type": "realm"},
+    {"id": "forgotten_jungle", "type": "realm"},
+    {"id": "corrupted_nether", "type": "realm"},
+
+    {"id": "floating_islands", "type": "location"},
+    {"id": "glitching_cave", "type": "location"},
+    {"id": "red_portal", "type": "location"},
+
+    {"id": "heart_shard", "type": "artifact"},
+    {"id": "demons_army", "type": "faction"},
+    {"id": "shadow_figures", "type": "faction"}
+  ],
+
+  "edges": [
+    {
+      "source": "heart_of_the_server",
+      "target": "overworld",
+      "relation": "fractures"
+    },
+    {
+      "source": "heart_of_the_server",
+      "target": "unknown_realm",
+      "relation": "creates"
+    },
+    {
+      "source": "heart_of_the_server",
+      "target": "skylands",
+      "relation": "creates"
+    },
+    {
+      "source": "heart_of_the_server",
+      "target": "forgotten_jungle",
+      "relation": "creates"
+    },
+    {
+      "source": "heart_of_the_server",
+      "target": "corrupted_nether",
+      "relation": "creates"
+    },
+
+    {
+      "source": "aj",
+      "target": "server_history_book",
+      "relation": "possesses"
+    },
+
+    {
+      "source": "zitsu",
+      "target": "unknown_realm",
+      "relation": "trapped_in"
+    },
+    {
+      "source": "zitsu",
+      "target": "aj",
+      "relation": "searches_for"
+    },
+    {
+      "source": "zitsu",
+      "target": "ishan",
+      "relation": "searches_for"
+    },
+    {
+      "source": "zitsu",
+      "target": "mightsta",
+      "relation": "searches_for"
+    },
+
+    {
+      "source": "ishan",
+      "target": "skylands",
+      "relation": "explores"
+    },
+
+    {
+      "source": "mightsta",
+      "target": "forgotten_jungle",
+      "relation": "stranded_in"
+    },
+    {
+      "source": "mightsta",
+      "target": "heart_shard",
+      "relation": "discovers"
+    },
+
+    {
+      "source": "heart_shard",
+      "target": "forgotten_jungle",
+      "relation": "located_in"
+    },
+
+    {
+      "source": "demon",
+      "target": "corrupted_nether",
+      "relation": "rules_from"
+    },
+    {
+      "source": "demon",
+      "target": "demons_army",
+      "relation": "commands"
+    },
+
+    {
+      "source": "shadow_figures",
+      "target": "demon",
+      "relation": "serve"
+    },
+
+    {
+      "source": "pixel",
+      "target": "heart_fragment",
+      "relation": "possesses"
+    },
+
+    {
+      "source": "pixel",
+      "target": "glitching_cave",
+      "relation": "operates_from"
+    },
+
+    {
+      "source": "pixel",
+      "target": "server",
+      "relation": "intends_to_rewrite_rules"
+    },
+
+    {
+      "source": "red_portal",
+      "target": "corrupted_nether",
+      "relation": "connected_to"
+    }
+  ],
+
+  "events": [
+    {
+      "id": "event_019",
+      "name": "Server Fracture",
+      "participants": [
+        "heart_of_the_server",
+        "overworld"
+      ]
+    },
+
+    {
+      "id": "event_020",
+      "name": "AJ Witnesses Collapse",
+      "participants": [
+        "aj"
+      ]
+    },
+
+    {
+      "id": "event_021",
+      "name": "Zitsu Awakens in Unknown Realm",
+      "participants": [
+        "zitsu"
+      ]
+    },
+
+    {
+      "id": "event_022",
+      "name": "Ishan Reaches Skylands",
+      "participants": [
+        "ishan"
+      ]
+    },
+
+    {
+      "id": "event_023",
+      "name": "Mightsta Discovers Heart Shard",
+      "participants": [
+        "mightsta",
+        "heart_shard"
+      ]
+    },
+
+    {
+      "id": "event_024",
+      "name": "Demon Builds His Empire",
+      "participants": [
+        "demon",
+        "demons_army"
+      ]
+    },
+
+    {
+      "id": "event_025",
+      "name": "Pixel Obtains Heart Fragment",
+      "participants": [
+        "pixel",
+        "heart_fragment"
+      ]
+    }
+  ],
+
+  "character_state_changes": [
+    {
+      "character": "zitsu",
+      "before": "leader_in_training",
+      "after": "realm_wanderer"
+    },
+    {
+      "character": "mightsta",
+      "before": "mission_focused",
+      "after": "seeking_redemption"
+    },
+    {
+      "character": "demon",
+      "before": "power_seeker",
+      "after": "realm_conqueror"
+    },
+    {
+      "character": "pixel",
+      "before": "manipulator",
+      "after": "independent_contender"
+    }
+  ],
+
+  "season_arc_updates": [
+    {
+      "arc": "Realm Fragmentation",
+      "status": "started"
+    },
+    {
+      "arc": "Heart Shard Hunt",
+      "status": "started"
+    },
+    {
+      "arc": "Demon's Conquest",
+      "status": "escalating"
+    },
+    {
+      "arc": "Pixel's Hidden Agenda",
+      "status": "active"
+    }
+  ]
+}

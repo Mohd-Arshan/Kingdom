@@ -1,0 +1,170 @@
+{
+  "chapter": {
+    "title": "Echo Vault ka Raaz",
+    "type": "story_chapter"
+  },
+
+  "nodes": [
+    {"id": "aj", "type": "character"},
+    {"id": "zitsu", "type": "character"},
+    {"id": "ayan", "type": "character"},
+    {"id": "demon", "type": "character"},
+    {"id": "mightsta", "type": "character"},
+    {"id": "pixel", "type": "character"},
+    {"id": "zenestrio", "type": "character"},
+    {"id": "demonic", "type": "character"},
+    {"id": "ishan", "type": "character"},
+    {"id": "ninja_hatori", "type": "character"},
+
+    {"id": "echo_vault", "type": "location"},
+    {"id": "demons_tower", "type": "location"},
+    {"id": "pixels_hideout", "type": "location"},
+    {"id": "hidden_tunnels", "type": "location"},
+
+    {"id": "echo_core", "type": "artifact"},
+    {"id": "heart_of_the_server", "type": "artifact"}
+  ],
+
+  "edges": [
+    {
+      "source": "zitsu",
+      "target": "aj",
+      "relation": "criticizes_leadership"
+    },
+    {
+      "source": "ayan",
+      "target": "aj",
+      "relation": "supports"
+    },
+    {
+      "source": "ayan",
+      "target": "zitsu",
+      "relation": "calms"
+    },
+
+    {
+      "source": "mightsta",
+      "target": "demon",
+      "relation": "reports_echo_vault"
+    },
+
+    {
+      "source": "pixel",
+      "target": "aj",
+      "relation": "manipulates"
+    },
+    {
+      "source": "pixel",
+      "target": "demon",
+      "relation": "manipulates"
+    },
+
+    {
+      "source": "aj",
+      "target": "echo_vault",
+      "relation": "travels_to"
+    },
+    {
+      "source": "demon",
+      "target": "echo_vault",
+      "relation": "travels_to"
+    },
+
+    {
+      "source": "echo_core",
+      "target": "pixel",
+      "relation": "reveals_mastermind"
+    },
+
+    {
+      "source": "zitsu",
+      "target": "pixel",
+      "relation": "corners"
+    },
+
+    {
+      "source": "ishan",
+      "target": "pixel",
+      "relation": "chases"
+    },
+    {
+      "source": "ninja_hatori",
+      "target": "pixel",
+      "relation": "chases"
+    },
+
+    {
+      "source": "aj",
+      "target": "pixel",
+      "relation": "offers_redemption"
+    },
+
+    {
+      "source": "zitsu",
+      "target": "aj",
+      "relation": "gains_respect"
+    },
+
+    {
+      "source": "demon",
+      "target": "aj",
+      "relation": "threatens_future_conflict"
+    },
+
+    {
+      "source": "echo_core",
+      "target": "heart_of_the_server",
+      "relation": "reveals_location"
+    }
+  ],
+
+  "events": [
+    {
+      "id": "event_001",
+      "name": "Leadership Conflict",
+      "participants": ["aj", "zitsu", "ayan"]
+    },
+
+    {
+      "id": "event_002",
+      "name": "Echo Vault Discovery",
+      "participants": ["mightsta", "demon"]
+    },
+
+    {
+      "id": "event_003",
+      "name": "Pixel's Manipulation",
+      "participants": ["pixel", "aj", "demon"]
+    },
+
+    {
+      "id": "event_004",
+      "name": "Echo Vault Expedition",
+      "participants": ["aj", "demon"]
+    },
+
+    {
+      "id": "event_005",
+      "name": "Mastermind Reveal",
+      "participants": ["pixel", "zenestrio", "demonic"]
+    },
+
+    {
+      "id": "event_006",
+      "name": "Pixel Chase",
+      "participants": ["pixel", "ishan", "ninja_hatori", "zitsu"]
+    },
+
+    {
+      "id": "event_007",
+      "name": "AJ's Judgment",
+      "participants": ["aj", "pixel"]
+    },
+
+    {
+      "id": "event_008",
+      "name": "Heart of the Server Revelation",
+      "participants": ["echo_core"]
+    }
+  ]
+}

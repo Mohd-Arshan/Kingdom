@@ -1,0 +1,301 @@
+{
+  "chapter": {
+    "title": "Nowhere to Run",
+    "arc": "Convergence Arc",
+    "season": 1,
+    "type": "character_stagnation_arc"
+  },
+
+  "nodes": [
+    { "id": "mightsta", "type": "character" },
+    { "id": "zitsu", "type": "character" },
+    { "id": "dark_zitsu", "type": "shadow_entity" },
+    { "id": "pixel", "type": "character" },
+    { "id": "aj", "type": "character" },
+    { "id": "ishan", "type": "character" },
+    { "id": "demon", "type": "character" },
+    { "id": "ayan", "type": "character" },
+
+    { "id": "will_of_the_server", "type": "shard" },
+    { "id": "soul_of_the_server", "type": "shard" },
+    { "id": "wrath_of_the_server", "type": "shard" },
+    { "id": "peace_of_the_server", "type": "shard" },
+
+    { "id": "mightsta_trident", "type": "weapon" },
+    { "id": "soul_severer", "type": "weapon" },
+
+    { "id": "jungle_realm", "type": "realm" },
+    { "id": "soul_realm", "type": "realm" },
+    { "id": "code_realm", "type": "realm" },
+
+    { "id": "soul_gate", "type": "portal" },
+    { "id": "realm_barrier", "type": "system" },
+
+    { "id": "beacon_structure", "type": "artifact" },
+    { "id": "burned_blueprint_page", "type": "artifact" },
+    { "id": "bedrock_cage", "type": "artifact" },
+
+    { "id": "luck", "type": "concept" }
+  ],
+
+  "edges": [
+    {
+      "source": "mightsta",
+      "target": "jungle_realm",
+      "relation": "trapped_in"
+    },
+
+    {
+      "source": "jungle_realm",
+      "target": "mightsta",
+      "relation": "prevents_escape_of"
+    },
+
+    {
+      "source": "will_of_the_server",
+      "target": "mightsta",
+      "relation": "tests_patience_of"
+    },
+
+    {
+      "source": "mightsta_trident",
+      "target": "jungle_realm",
+      "relation": "fails_to_break"
+    },
+
+    {
+      "source": "zitsu",
+      "target": "soul_realm",
+      "relation": "trapped_in"
+    },
+
+    {
+      "source": "dark_zitsu",
+      "target": "zitsu",
+      "relation": "questions_readiness_of"
+    },
+
+    {
+      "source": "wrath_of_the_server",
+      "target": "soul_of_the_server",
+      "relation": "pulls_toward"
+    },
+
+    {
+      "source": "soul_severer",
+      "target": "soul_gate",
+      "relation": "attempts_to_open"
+    },
+
+    {
+      "source": "soul_gate",
+      "target": "zitsu",
+      "relation": "rejects_exit_for"
+    },
+
+    {
+      "source": "realm_barrier",
+      "target": "mightsta",
+      "relation": "blocks"
+    },
+
+    {
+      "source": "realm_barrier",
+      "target": "zitsu",
+      "relation": "blocks"
+    },
+
+    {
+      "source": "pixel",
+      "target": "ishan",
+      "relation": "monitors_battle_of"
+    },
+
+    {
+      "source": "pixel",
+      "target": "demon",
+      "relation": "monitors_battle_of"
+    },
+
+    {
+      "source": "pixel",
+      "target": "ayan",
+      "relation": "observes"
+    },
+
+    {
+      "source": "pixel",
+      "target": "beacon_structure",
+      "relation": "sabotaged"
+    },
+
+    {
+      "source": "pixel",
+      "target": "burned_blueprint_page",
+      "relation": "destroyed"
+    },
+
+    {
+      "source": "burned_blueprint_page",
+      "target": "beacon_structure",
+      "relation": "required_for_completion"
+    },
+
+    {
+      "source": "pixel",
+      "target": "aj",
+      "relation": "taunts"
+    },
+
+    {
+      "source": "aj",
+      "target": "bedrock_cage",
+      "relation": "imprisoned_in"
+    },
+
+    {
+      "source": "aj",
+      "target": "luck",
+      "relation": "places_faith_in"
+    }
+  ],
+
+  "events": [
+    {
+      "id": "event_105",
+      "name": "Will Cannot Escape",
+      "participants": [
+        "mightsta",
+        "will_of_the_server"
+      ]
+    },
+
+    {
+      "id": "event_106",
+      "name": "Soul Gate Failure",
+      "participants": [
+        "zitsu",
+        "dark_zitsu",
+        "soul_gate"
+      ]
+    },
+
+    {
+      "id": "event_107",
+      "name": "Dual Reflection",
+      "participants": [
+        "mightsta",
+        "zitsu"
+      ]
+    },
+
+    {
+      "id": "event_108",
+      "name": "Pixel Reviews the Battlefield",
+      "participants": [
+        "pixel",
+        "ishan",
+        "demon",
+        "ayan"
+      ]
+    },
+
+    {
+      "id": "event_109",
+      "name": "Beacon Failure Explained",
+      "participants": [
+        "pixel",
+        "beacon_structure"
+      ]
+    },
+
+    {
+      "id": "event_110",
+      "name": "AJ's Response",
+      "participants": [
+        "aj",
+        "pixel"
+      ]
+    }
+  ],
+
+  "character_state_changes": [
+    {
+      "character": "mightsta",
+      "before": "awakened_bearer",
+      "after": "impatient_prisoner"
+    },
+
+    {
+      "character": "zitsu",
+      "before": "self_accepted",
+      "after": "questioning_final_truth"
+    },
+
+    {
+      "character": "pixel",
+      "before": "worried",
+      "after": "overconfident"
+    },
+
+    {
+      "character": "aj",
+      "before": "silent_captive",
+      "after": "quietly_confident"
+    }
+  ],
+
+  "major_revelations": [
+    {
+      "id": "reveal_019",
+      "fact": "Neither Soul nor Will bearers can leave their realms despite completing their shard awakenings."
+    },
+
+    {
+      "id": "reveal_020",
+      "fact": "Realm barriers appear to be governed by timing rather than power."
+    },
+
+    {
+      "id": "reveal_021",
+      "fact": "Pixel intentionally destroyed a critical page of AJ's beacon blueprint."
+    },
+
+    {
+      "id": "reveal_022",
+      "fact": "The beacon failed because the heroes unknowingly built an incomplete version."
+    },
+
+    {
+      "id": "reveal_023",
+      "fact": "AJ believes an unknown factor called 'Luck' may still change the outcome."
+    }
+  ],
+
+  "season_arc_updates": [
+    {
+      "arc": "Soul Realm Escape",
+      "status": "blocked"
+    },
+
+    {
+      "arc": "Will Realm Escape",
+      "status": "blocked"
+    },
+
+    {
+      "arc": "Beacon Project",
+      "status": "sabotaged"
+    },
+
+    {
+      "arc": "Pixel's Control",
+      "status": "peak_confidence"
+    },
+
+    {
+      "arc": "AJ Rescue",
+      "status": "hope_maintained"
+    }
+  ]
+}

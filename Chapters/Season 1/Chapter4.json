@@ -1,0 +1,230 @@
+{
+  "chapter": {
+    "title": "Soul of the Server",
+    "arc": "Zitsu Arc",
+    "season": 1,
+    "type": "character_arc"
+  },
+
+  "nodes": [
+    { "id": "zitsu", "type": "character" },
+    { "id": "dark_zitsu", "type": "shadow_entity" },
+    { "id": "aj", "type": "character" },
+    { "id": "ishan", "type": "character" },
+    { "id": "mightsta", "type": "character" },
+    { "id": "pixel", "type": "character" },
+
+    { "id": "shattered_island", "type": "location" },
+    { "id": "violet_beam", "type": "location_marker" },
+    { "id": "code_realm", "type": "realm" },
+
+    { "id": "soul_piece", "type": "artifact" },
+    { "id": "soul_severer", "type": "weapon" },
+
+    { "id": "aj_letter", "type": "artifact" }
+  ],
+
+  "edges": [
+    {
+      "source": "zitsu",
+      "target": "shattered_island",
+      "relation": "awakens_in"
+    },
+
+    {
+      "source": "zitsu",
+      "target": "violet_beam",
+      "relation": "travels_toward"
+    },
+
+    {
+      "source": "aj",
+      "target": "aj_letter",
+      "relation": "writes"
+    },
+
+    {
+      "source": "aj_letter",
+      "target": "zitsu",
+      "relation": "encourages"
+    },
+
+    {
+      "source": "zitsu",
+      "target": "soul_piece",
+      "relation": "discovers"
+    },
+
+    {
+      "source": "soul_piece",
+      "target": "dark_zitsu",
+      "relation": "manifests"
+    },
+
+    {
+      "source": "dark_zitsu",
+      "target": "zitsu",
+      "relation": "embodies_fears_of"
+    },
+
+    {
+      "source": "dark_zitsu",
+      "target": "zitsu",
+      "relation": "challenges"
+    },
+
+    {
+      "source": "zitsu",
+      "target": "dark_zitsu",
+      "relation": "defeats"
+    },
+
+    {
+      "source": "soul_piece",
+      "target": "soul_severer",
+      "relation": "transforms_into"
+    },
+
+    {
+      "source": "zitsu",
+      "target": "soul_severer",
+      "relation": "obtains"
+    },
+
+    {
+      "source": "pixel",
+      "target": "code_realm",
+      "relation": "rules_from"
+    },
+
+    {
+      "source": "pixel",
+      "target": "zitsu",
+      "relation": "observes"
+    },
+
+    {
+      "source": "pixel",
+      "target": "soul_severer",
+      "relation": "takes_interest_in"
+    }
+  ],
+
+  "events": [
+    {
+      "id": "event_026",
+      "name": "Zitsu Awakens Alone",
+      "participants": [
+        "zitsu"
+      ]
+    },
+
+    {
+      "id": "event_027",
+      "name": "AJ's Message",
+      "participants": [
+        "aj",
+        "zitsu"
+      ]
+    },
+
+    {
+      "id": "event_028",
+      "name": "Discovery of the Soul Piece",
+      "participants": [
+        "zitsu",
+        "soul_piece"
+      ]
+    },
+
+    {
+      "id": "event_029",
+      "name": "Manifestation of Dark Zitsu",
+      "participants": [
+        "dark_zitsu",
+        "zitsu"
+      ]
+    },
+
+    {
+      "id": "event_030",
+      "name": "Battle of the Soul",
+      "participants": [
+        "zitsu",
+        "dark_zitsu"
+      ]
+    },
+
+    {
+      "id": "event_031",
+      "name": "Creation of Soul Severer",
+      "participants": [
+        "zitsu",
+        "soul_piece",
+        "soul_severer"
+      ]
+    },
+
+    {
+      "id": "event_032",
+      "name": "Pixel Watches from the Code Realm",
+      "participants": [
+        "pixel",
+        "zitsu"
+      ]
+    }
+  ],
+
+  "character_state_changes": [
+    {
+      "character": "zitsu",
+      "before": "lost_and_uncertain",
+      "after": "self_accepted"
+    },
+
+    {
+      "character": "zitsu",
+      "before": "fighter",
+      "after": "protector"
+    },
+
+    {
+      "character": "pixel",
+      "before": "hidden_observer",
+      "after": "active_mastermind"
+    }
+  ],
+
+  "artifacts": [
+    {
+      "id": "soul_piece",
+      "classification": "heart_fragment",
+      "element": "soul",
+      "status": "absorbed"
+    },
+
+    {
+      "id": "soul_severer",
+      "classification": "legendary_weapon",
+      "owner": "zitsu",
+      "origin": "soul_piece"
+    }
+  ],
+
+  "season_arc_updates": [
+    {
+      "arc": "Zitsu's Self-Discovery",
+      "status": "completed"
+    },
+
+    {
+      "arc": "Soul Fragment Acquisition",
+      "status": "completed"
+    },
+
+    {
+      "arc": "Pixel's Grand Plan",
+      "status": "advancing"
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "chapter": {
+    "title": "The Moment Before Light",
+    "arc": "Convergence Arc",
+    "season": 1,
+    "type": "revelation_arc"
+  },
+
+  "nodes": [
+    { "id": "ayan", "type": "character" },
+    { "id": "zenestrio", "type": "character" },
+    { "id": "demonic", "type": "character" },
+    { "id": "prosam", "type": "character" },
+    { "id": "ninja_hatori", "type": "character" },
+    { "id": "demon", "type": "character" },
+    { "id": "aj", "type": "character" },
+
+    { "id": "baraakas", "type": "character" },
+
+    { "id": "beacon_structure", "type": "artifact" },
+
+    { "id": "soul_of_the_server", "type": "shard" },
+    { "id": "peace_of_the_server", "type": "shard" },
+    { "id": "will_of_the_server", "type": "shard" },
+    { "id": "mind_of_the_server", "type": "shard" },
+    { "id": "wrath_of_the_server", "type": "shard" },
+    { "id": "void_of_the_server", "type": "shard" },
+
+    { "id": "pixel_network", "type": "system" },
+    { "id": "shard_trials", "type": "system" },
+    { "id": "server_core", "type": "artifact" }
+  ],
+
+  "edges": [
+    {
+      "source": "demonic",
+      "target": "pixel_network",
+      "relation": "connected_to"
+    },
+
+    {
+      "source": "demonic",
+      "target": "demon",
+      "relation": "observes_fragments_of"
+    },
+
+    {
+      "source": "ayan",
+      "target": "demonic",
+      "relation": "analyzes_condition_of"
+    },
+
+    {
+      "source": "prosam",
+      "target": "baraakas",
+      "relation": "receives_information_from"
+    },
+
+    {
+      "source": "baraakas",
+      "target": "server_core",
+      "relation": "explains_fragmentation_of"
+    },
+
+    {
+      "source": "server_core",
+      "target": "soul_of_the_server",
+      "relation": "fragmented_into"
+    },
+
+    {
+      "source": "server_core",
+      "target": "peace_of_the_server",
+      "relation": "fragmented_into"
+    },
+
+    {
+      "source": "server_core",
+      "target": "will_of_the_server",
+      "relation": "fragmented_into"
+    },
+
+    {
+      "source": "server_core",
+      "target": "mind_of_the_server",
+      "relation": "fragmented_into"
+    },
+
+    {
+      "source": "server_core",
+      "target": "wrath_of_the_server",
+      "relation": "fragmented_into"
+    },
+
+    {
+      "source": "server_core",
+      "target": "void_of_the_server",
+      "relation": "fragmented_into"
+    },
+
+    {
+      "source": "shard_trials",
+      "target": "soul_of_the_server",
+      "relation": "governs"
+    },
+
+    {
+      "source": "shard_trials",
+      "target": "peace_of_the_server",
+      "relation": "governs"
+    },
+
+    {
+      "source": "shard_trials",
+      "target": "will_of_the_server",
+      "relation": "governs"
+    },
+
+    {
+      "source": "shard_trials",
+      "target": "mind_of_the_server",
+      "relation": "governs"
+    },
+
+    {
+      "source": "shard_trials",
+      "target": "wrath_of_the_server",
+      "relation": "governs"
+    },
+
+    {
+      "source": "shard_trials",
+      "target": "void_of_the_server",
+      "relation": "governs"
+    },
+
+    {
+      "source": "void_of_the_server",
+      "target": "unknown_bearer",
+      "relation": "awaits_selection_of"
+    },
+
+    {
+      "source": "ayan",
+      "target": "beacon_structure",
+      "relation": "continues_construction_of"
+    },
+
+    {
+      "source": "zenestrio",
+      "target": "ayan",
+      "relation": "pledges_support_to"
+    },
+
+    {
+      "source": "ninja_hatori",
+      "target": "ayan",
+      "relation": "supports_leadership_of"
+    },
+
+    {
+      "source": "prosam",
+      "target": "ayan",
+      "relation": "supports_leadership_of"
+    },
+
+    {
+      "source": "demonic",
+      "target": "ayan",
+      "relation": "joins_mission_of"
+    }
+  ],
+
+  "events": [
+    {
+      "id": "event_091",
+      "name": "Demonic's Condition Escalates",
+      "participants": [
+        "demonic",
+        "ayan",
+        "zenestrio"
+      ]
+    },
+
+    {
+      "id": "event_092",
+      "name": "Confirmation of Demon's Survival",
+      "participants": [
+        "demonic",
+        "demon"
+      ]
+    },
+
+    {
+      "id": "event_093",
+      "name": "Baraakas Revelation",
+      "participants": [
+        "prosam",
+        "baraakas"
+      ]
+    },
+
+    {
+      "id": "event_094",
+      "name": "The Six Shards Explained",
+      "participants": [
+        "ayan",
+        "prosam",
+        "ninja_hatori",
+        "zenestrio",
+        "demonic"
+      ]
+    },
+
+    {
+      "id": "event_095",
+      "name": "Void Shard Identified",
+      "participants": [
+        "void_of_the_server"
+      ]
+    },
+
+    {
+      "id": "event_096",
+      "name": "Ayan's Leadership Speech",
+      "participants": [
+        "ayan",
+        "zenestrio",
+        "prosam",
+        "ninja_hatori",
+        "demonic"
+      ]
+    },
+
+    {
+      "id": "event_097",
+      "name": "Formation of the Temple Alliance",
+      "participants": [
+        "ayan",
+        "zenestrio",
+        "prosam",
+        "ninja_hatori",
+        "demonic"
+      ]
+    }
+  ],
+
+  "character_state_changes": [
+    {
+      "character": "ayan",
+      "before": "acting_coordinator",
+      "after": "recognized_leader"
+    },
+
+    {
+      "character": "demonic",
+      "before": "frightened_victim",
+      "after": "determined_ally"
+    },
+
+    {
+      "character": "zenestrio",
+      "before": "supportive_survivor",
+      "after": "loyal_lieutenant"
+    }
+  ],
+
+  "major_revelations": [
+    {
+      "id": "reveal_010",
+      "fact": "The Heart of the Server shattered into exactly six shards."
+    },
+
+    {
+      "id": "reveal_011",
+      "fact": "Every shard requires a trial before selecting a bearer."
+    },
+
+    {
+      "id": "reveal_012",
+      "fact": "Failure during a shard trial can result in death or corruption."
+    },
+
+    {
+      "id": "reveal_013",
+      "fact": "The sixth shard is Void of the Server."
+    },
+
+    {
+      "id": "reveal_014",
+      "fact": "Mind of the Server exists but its bearer remains unknown."
+    }
+  ],
+
+  "season_arc_updates": [
+    {
+      "arc": "The Six Shards",
+      "status": "fully_revealed"
+    },
+
+    {
+      "arc": "Void of the Server",
+      "status": "introduced"
+    },
+
+    {
+      "arc": "Mind of the Server",
+      "status": "bearer_unknown"
+    },
+
+    {
+      "arc": "Temple Alliance",
+      "status": "formed"
+    },
+
+    {
+      "arc": "Ayan's Leadership",
+      "status": "accepted"
+    }
+  ]
+}

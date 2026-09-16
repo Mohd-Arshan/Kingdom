@@ -1,0 +1,282 @@
+{
+  "chapter": {
+    "title": "Void Part II",
+    "season": 2,
+    "chapter_number": 4,
+    "arc": "Void Arc",
+    "type": "mind_shard_reveal"
+  },
+
+  "nodes": [
+    {"id":"pixel","type":"character"},
+    {"id":"zitsu","type":"character"},
+    {"id":"ayan","type":"character"},
+    {"id":"demonic","type":"character"},
+    {"id":"zenestrio","type":"character"},
+    {"id":"ninja_hatori","type":"character"},
+    {"id":"prosam","type":"character"},
+
+    {"id":"mind_of_the_server","type":"shard"},
+    {"id":"soul_of_the_server","type":"shard"},
+
+    {"id":"soul_saviour","type":"weapon"},
+
+    {"id":"void_realm","type":"realm"},
+    {"id":"floating_temple","type":"location"},
+
+    {"id":"code_wall","type":"construct"},
+    {"id":"code_cube_prison","type":"construct"},
+
+    {"id":"system_interface","type":"system"},
+    {"id":"command_rewrite","type":"ability"},
+    {"id":"pixel_network","type":"system"}
+  ],
+
+  "edges": [
+    {
+      "source":"pixel",
+      "target":"ayan",
+      "relation":"imprisons"
+    },
+
+    {
+      "source":"code_cube_prison",
+      "target":"ayan",
+      "relation":"contains"
+    },
+
+    {
+      "source":"pixel",
+      "target":"command_rewrite",
+      "relation":"uses"
+    },
+
+    {
+      "source":"command_rewrite",
+      "target":"ender_pearl",
+      "relation":"rewrites_into_snowball"
+    },
+
+    {
+      "source":"pixel",
+      "target":"code_wall",
+      "relation":"creates"
+    },
+
+    {
+      "source":"zitsu",
+      "target":"code_wall",
+      "relation":"destroys"
+    },
+
+    {
+      "source":"system_interface",
+      "target":"soul_saviour",
+      "relation":"identifies"
+    },
+
+    {
+      "source":"system_interface",
+      "target":"soul_of_the_server",
+      "relation":"identifies_second_form_of"
+    },
+
+    {
+      "source":"pixel",
+      "target":"zitsu",
+      "relation":"engages_in_battle"
+    },
+
+    {
+      "source":"demonic",
+      "target":"pixel_network",
+      "relation":"connected_to"
+    },
+
+    {
+      "source":"demonic",
+      "target":"ayan",
+      "relation":"detects_status_of"
+    },
+
+    {
+      "source":"demonic",
+      "target":"zitsu",
+      "relation":"observes_battle_of"
+    },
+
+    {
+      "source":"zenestrio",
+      "target":"demonic",
+      "relation":"supports"
+    },
+
+    {
+      "source":"ninja_hatori",
+      "target":"ayan",
+      "relation":"believed_dead"
+    },
+
+    {
+      "source":"demonic",
+      "target":"ninja_hatori",
+      "relation":"corrects"
+    },
+
+    {
+      "source":"prosam",
+      "target":"rescue_operation",
+      "relation":"creates_plan_for"
+    }
+  ],
+
+  "events": [
+    {
+      "id":"s2_event_024",
+      "name":"Pixel Reveals Beacon Truth",
+      "participants":[
+        "pixel",
+        "ayan",
+        "zitsu"
+      ]
+    },
+
+    {
+      "id":"s2_event_025",
+      "name":"Ayan Imprisoned",
+      "participants":[
+        "pixel",
+        "ayan"
+      ]
+    },
+
+    {
+      "id":"s2_event_026",
+      "name":"Ender Pearl Rewrite",
+      "participants":[
+        "pixel",
+        "zitsu"
+      ]
+    },
+
+    {
+      "id":"s2_event_027",
+      "name":"Soul Saviour Recognition",
+      "participants":[
+        "pixel",
+        "zitsu",
+        "system_interface"
+      ]
+    },
+
+    {
+      "id":"s2_event_028",
+      "name":"Demonic Awakens",
+      "participants":[
+        "demonic",
+        "zenestrio"
+      ]
+    },
+
+    {
+      "id":"s2_event_029",
+      "name":"Ayan Confirmed Alive",
+      "participants":[
+        "demonic",
+        "ninja_hatori"
+      ]
+    },
+
+    {
+      "id":"s2_event_030",
+      "name":"Rescue Team Formation",
+      "participants":[
+        "prosam",
+        "zenestrio",
+        "demonic",
+        "ninja_hatori"
+      ]
+    }
+  ],
+
+  "character_state_changes": [
+    {
+      "character":"pixel",
+      "before":"hunter",
+      "after":"battlefield_controller"
+    },
+
+    {
+      "character":"zitsu",
+      "before":"reunited_hero",
+      "after":"soul_second_form_user"
+    },
+
+    {
+      "character":"ayan",
+      "before":"free_explorer",
+      "after":"captured_target"
+    },
+
+    {
+      "character":"demonic",
+      "before":"unconscious",
+      "after":"active_information_source"
+    },
+
+    {
+      "character":"prosam",
+      "before":"support_member",
+      "after":"strategist"
+    }
+  ],
+
+  "major_revelations": [
+    {
+      "id":"reveal_047",
+      "fact":"Pixel intentionally sabotaged the beacon by removing critical pages."
+    },
+
+    {
+      "id":"reveal_048",
+      "fact":"Mind Shard grants live command rewriting abilities."
+    },
+
+    {
+      "id":"reveal_049",
+      "fact":"Zitsu has unlocked the second form of the Soul Shard."
+    },
+
+    {
+      "id":"reveal_050",
+      "fact":"Demonic can access information through Pixel's perception network."
+    },
+
+    {
+      "id":"reveal_051",
+      "fact":"A rescue mission for Ayan has officially begun."
+    }
+  ],
+
+  "season_arc_updates": [
+    {
+      "arc":"Pixel vs Zitsu",
+      "status":"started"
+    },
+
+    {
+      "arc":"Ayan Rescue",
+      "status":"active"
+    },
+
+    {
+      "arc":"Mind Shard",
+      "status":"fully_revealed"
+    },
+
+    {
+      "arc":"Soul Second Form",
+      "status":"revealed"
+    }
+  ]
+}

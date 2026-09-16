@@ -1,0 +1,220 @@
+{
+  "chapter": {
+    "title": "Echoes of the Void",
+    "season": 2,
+    "chapter_number": 1,
+    "arc": "Void Arc",
+    "type": "aftermath_and_setup"
+  },
+
+  "nodes": [
+    {"id":"aj","type":"character"},
+    {"id":"shubham","type":"character"},
+    {"id":"ayan","type":"character"},
+    {"id":"demonic","type":"character"},
+    {"id":"zenestrio","type":"character"},
+    {"id":"ninja_hatori","type":"character"},
+    {"id":"prosam","type":"character"},
+
+    {"id":"void_realm","type":"realm"},
+    {"id":"floating_temple","type":"location"},
+    {"id":"void_tower","type":"location"},
+
+    {"id":"beacon_structure","type":"artifact"},
+    {"id":"multi_shard_beam","type":"energy_event"},
+
+    {"id":"fog_field","type":"phenomenon"},
+    {"id":"unknown_transformation","type":"event"}
+  ],
+
+  "edges": [
+    {
+      "source":"aj",
+      "target":"beacon_structure",
+      "relation":"questions_activation_of"
+    },
+
+    {
+      "source":"shubham",
+      "target":"aj",
+      "relation":"seeks_answers_from"
+    },
+
+    {
+      "source":"beacon_structure",
+      "target":"multi_shard_beam",
+      "relation":"generated"
+    },
+
+    {
+      "source":"multi_shard_beam",
+      "target":"void_realm",
+      "relation":"transports_to"
+    },
+
+    {
+      "source":"demonic",
+      "target":"unknown_transformation",
+      "relation":"negatively_affected_by"
+    },
+
+    {
+      "source":"zenestrio",
+      "target":"demonic",
+      "relation":"protects"
+    },
+
+    {
+      "source":"zenestrio",
+      "target":"ayan",
+      "relation":"blames"
+    },
+
+    {
+      "source":"ayan",
+      "target":"floating_temple",
+      "relation":"investigates"
+    },
+
+    {
+      "source":"ninja_hatori",
+      "target":"floating_temple",
+      "relation":"investigates"
+    },
+
+    {
+      "source":"prosam",
+      "target":"demonic",
+      "relation":"heals"
+    },
+
+    {
+      "source":"floating_temple",
+      "target":"void_realm",
+      "relation":"located_in"
+    },
+
+    {
+      "source":"void_tower",
+      "target":"beacon_structure",
+      "relation":"contains"
+    }
+  ],
+
+  "events": [
+    {
+      "id":"s2_event_007",
+      "name":"AJ Notices Beacon Anomaly",
+      "participants":[
+        "aj",
+        "shubham"
+      ]
+    },
+
+    {
+      "id":"s2_event_008",
+      "name":"Beacon Beam Collapses",
+      "participants":[
+        "beacon_structure"
+      ]
+    },
+
+    {
+      "id":"s2_event_009",
+      "name":"Demonic Suffers Violent Reaction",
+      "participants":[
+        "demonic"
+      ]
+    },
+
+    {
+      "id":"s2_event_010",
+      "name":"Temple Revealed Floating",
+      "participants":[
+        "ayan",
+        "ninja_hatori",
+        "zenestrio",
+        "prosam"
+      ]
+    },
+
+    {
+      "id":"s2_event_011",
+      "name":"Leadership Crisis Begins",
+      "participants":[
+        "ayan",
+        "zenestrio"
+      ]
+    }
+  ],
+
+  "character_state_changes": [
+    {
+      "character":"ayan",
+      "before":"accepted_leader",
+      "after":"leadership_under_question"
+    },
+
+    {
+      "character":"zenestrio",
+      "before":"loyal_ally",
+      "after":"emotionally_conflicted"
+    },
+
+    {
+      "character":"demonic",
+      "before":"stable_but_corrupted",
+      "after":"critically_unstable"
+    },
+
+    {
+      "character":"aj",
+      "before":"hopeful",
+      "after":"deeply_suspicious"
+    }
+  ],
+
+  "major_revelations": [
+    {
+      "id":"reveal_034",
+      "fact":"The beacon successfully activated but immediately shut down."
+    },
+
+    {
+      "id":"reveal_035",
+      "fact":"The temple base is no longer on normal ground."
+    },
+
+    {
+      "id":"reveal_036",
+      "fact":"The temple is floating inside an unknown realm."
+    },
+
+    {
+      "id":"reveal_037",
+      "fact":"Demonic's condition worsened immediately after beacon activation."
+    }
+  ],
+
+  "season_arc_updates": [
+    {
+      "arc":"Void Realm Mystery",
+      "status":"started"
+    },
+
+    {
+      "arc":"Demonic's Corruption",
+      "status":"critical"
+    },
+
+    {
+      "arc":"Ayan's Leadership",
+      "status":"challenged"
+    },
+
+    {
+      "arc":"Beacon Consequences",
+      "status":"revealed"
+    }
+  ]
+}
